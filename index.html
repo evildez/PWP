@@ -19,12 +19,12 @@
                 <div class="uk-navbar-right uk-margin-large-right" uk-margin>
                     <ul class="uk-navbar-nav">
                         <li class="">
-                            <a class="uk-padding-remove-vertical" href="#abt" uk-scroll>
+                            <a class="uk-padding-remove-vertical" href="#abt" uk-scroll="offset: 50">
                                 <button class="uk-button uk-button-text">About Me</button>
                             </a>
                         </li>
                         <li class="">
-                            <a class="uk-padding-remove-vertical" href="">
+                            <a class="uk-padding-remove-vertical" href="#prj" uk-scroll="offset: 50">
                                 <button class="uk-button uk-button-text">Projects</button>
                             </a>
                         </li>
@@ -79,15 +79,22 @@
             </div>
         </div>
         <!--Projects-->
-        <div class="uk-child-width-expand uk-grid-collapse" uk-grid uk-height-match="row: false">
-            <div class="">
-                <h1 class="uk-heading-small uk-text-light uk-position-relative uk-position-center">Hello</h1>
+        <div id="prj" class="uk-child-width-expand uk-grid-collapse" uk-grid uk-height-match="row: false">
+            <div class="uk-margin-large-top">
+                <h1 class="uk-text-center uk-heading-small uk-text-light" uk-sticky="bottom: #offset; offset: 100">All kinds of projects</h1>
             </div>
             <div class="">
                 <div class="uk-panel uk-scrollable">
                     <div class="uk-card uk-card-default uk-card-body">
                         <img src="Images/WP.jpg" width="" height="" alt="">
                         <h2 class="uk-card-title">Project 1</h2>
+                        <hr>
+                        <p>Project Description, project description</p>
+                    </div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <img data-src="Images/WP1.jpg" width="" height="" alt="" uk-img>
+                        <h2 class="uk-card-title">Project 2</h2>
+                        <hr>
                         <p>Project Description, project description</p>
                     </div>
                 </div>
