@@ -8,13 +8,40 @@
         <script src="JS/uikit-icons.min.js"></script>
     </head>
     <body>
-        <div class="uk-margin-auto">
-            <h1 class="uk-heading-small">Hello Internet!</h1>
-            <p class="uk-text ">"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat."</p>
-            <button class="uk-button uk-button-primary uk-border-pill">Contact Me</button>
+        <div class="uk-background-default">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-margin-xlarge-left uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="">About Me</a></li>
+                        <li class=""><a href="">Projects</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>                
+        <div class="uk-height-1-1" uk-height-viewport="offset-top: false; offset-bottom: 20">
+            <div class="uk-flex-auto uk-width-1-2 uk-position-center-left uk-margin-xlarge-left">
+                <h1 class="uk-heading-medium uk-text-light">Hello Internet!</h1>
+                <div class="uk-text-meta uk-margin-medium-bottom uk-text-break">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat."</div>
+                <button class="uk-button uk-button-primary uk-border-pill">Contact Me</button>
+            </div>
+        </div>
+
+        <div class="uk-margin-medium-left uk-margin-medium-right">
+            <div class="uk.width-1-1 uk-background-primary">
+                <div class="uk-light uk-height-medium uk-child-width-expand uk-grid-collapse" uk-grid>
+                    <div class="uk-height-1-1 ">
+                        <h1 class="uk-heading-small uk-text-light uk-position-relative uk-position-center">A bit about me</h1>
+                    </div>
+                    <div class="uk-height-1-1 ">
+                        <h1 class="uk-heading-small uk-text-light uk-position-relative uk-position-center">A bit about me</h1>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </body>
