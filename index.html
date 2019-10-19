@@ -8,20 +8,23 @@
         <script src="JS/uikit-icons.min.js"></script>
     </head>
     <body>
-        <div class="uk-background-default" uk-sticky="show-on-up: true">
+        <div class="uk-background-default" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom">
             <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
                 <div class="uk-margin-xlarge-left uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo uk-padding-remove">Emilio Villarruel Fernández</a>
+                </div>
+                <div class="uk-navbar-right uk-margin-xlarge-right">
                     <ul class="uk-navbar-nav">
-                        <li class=""><a href="#abt" uk-scroll>About Me</a></li>
-                        <li class=""><a href="">Projects</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li class="uk-padding uk-padding-remove-vertical"><a class="uk-padding-remove" href="#abt" uk-scroll>About Me</a></li>
+                        <li class=""><a class="uk-padding-remove href="">Projects</a></li>
+                        <li class="uk-padding uk-padding-remove-vertical uk-padding-remove-right"><a class="uk-padding-remove href="">Contact</a></li>
                     </ul>
                 </div>
             </nav>
         </div>                
         <div class="uk-height-1-1" uk-height-viewport="offset-top: false; offset-bottom: 20">
             <div class="uk-flex-auto uk-width-1-2 uk-position-center-left uk-margin-xlarge-left">
-                <h1 class="uk-heading-medium uk-text-light">Hello Internet!</h1>
+                <h1 class="uk-animation-fade uk-heading-medium uk-text-light">Hello Internet!</h1>
                 <div class="uk-text-meta uk-margin-medium-bottom uk-text-break">
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
