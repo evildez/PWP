@@ -18,17 +18,22 @@
                     <!--Navigation-->
                     <div class="uk-navbar-right uk-margin-large-right" uk-margin>
                         <ul class="uk-navbar-nav">
-                            <li class="">
+                            <li>
                                 <a class="uk-padding-remove-vertical" href="#abt" uk-scroll="offset: 50">
                                     <button class="uk-button uk-button-text">About Me</button>
                                 </a>
                             </li>
-                            <li class="">
+                            <li>
                                 <a class="uk-padding-remove-vertical" href="#prj" uk-scroll="offset: -0.5">
                                     <button class="uk-button uk-button-text">Projects</button>
                                 </a>
                             </li>
-                            <li class="">
+                            <li>
+                                <a class="uk-padding-remove-vertical" href="#msc" uk-scroll>
+                                    <button class="uk-button uk-button-text">Miscellaneous</button>
+                                </a>
+                            </li>
+                            <li>
                                 <a class="uk-padding-remove-vertical" href="#ctc" uk-scroll>
                                     <button class="uk-button uk-button-text">Contact</button>
                                 </a>
@@ -39,12 +44,11 @@
             </div>
             <!--Hero Title, Description and Button-->
             <div class="uk-height-1-1" uk-height-viewport="offset-top: false; offset-bottom: 20">
-
                 <div class="uk-flex-auto uk-width-2-5 uk-position-large uk-position-center-left uk-padding-large uk-padding-remove-vertical uk-padding-remove-right">
 
-                    <h1 class="uk-animation-fade uk-heading-medium uk-text-light">Hello Internet!</h1>
+                    <h1 class="uk-heading-medium uk-text-light">Hello Internet!</h1>
 
-                    <div class="uk-text-meta uk-margin-medium-bottom uk-text-break">
+                    <div class="uk-text-meta uk-margin-medium-bottom">
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                         ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -58,10 +62,10 @@
             <div id="abt" class="uk-margin-medium-left uk-margin-medium-right">
                 <div class="uk-width-1-1 uk-background-primary">
                     <div class="uk-light uk-height-expand uk-flex uk-flex-center uk-flex-middle uk-child-width-1-2">
-                        <!--Section Title-->
+                        <!--Section Title & Description-->
                         <div class="uk-padding-large uk-padding-remove-vertical uk-text-light uk-text-emphasis">
-                            <h1 class="uk-heading-small uk-text-light uk-text-center">A bit about me</h1>
-                            <p>Hello there my name is <b>Emilio</b>, I'm pleased to meet you. 
+                            <h1 uk-parallax="y: -250,0; opacity: 0, 1; viewport: 0.7;" class="uk-heading-small uk-text-light uk-text-center">A bit about me</h1>
+                            <p uk-parallax="y: 250, 0; opacity: 0, 1; viewport: 0.55;">Hello there my name is <b>Emilio</b>, I'm pleased to meet you. 
                             I'm currently a full time student at <i>ITAM</i> and will be concluding my studies 
                             in winter of 2019. I created this website with the purpose of presenting me 
                             to the world and as a little challenge to myself. I hope you find interesting what 
@@ -73,6 +77,15 @@
                                 <dl class="uk-description-list">
                                     <dt class="uk-text-emphasis">Studies</dt>
                                     <dd><i>Instituto Tecnológico Autónomo de México</i> - Industrial Engineering</dd>
+                                    <dd>
+                                        <div uk-countdown="date: 2019-12-20T11:09:00+00:00">
+                                            <span class="uk-countdown-number uk-text-small uk-countdown-days"></span><small>d</small>
+                                            <span class="uk-countdown-number uk-text-small uk-countdown-hours"></span><small>h</small>
+                                            <span class="uk-countdown-number uk-text-small uk-countdown-minutes"></span><small>m</small>
+                                            <span class="uk-countdown-number uk-text-small uk-countdown-seconds"></span><small>s</small>
+                                            <small>Time until graduation ceremony</small>
+                                        </div>
+                                    </dd>
                                     <dt class="uk-text-emphasis">Experience</dt>
                                     <dd><i>ITAM Intern</i> - International Office</dd>
                                     <dt class="uk-text-emphasis">Languages</dt>
@@ -87,8 +100,9 @@
             </div>
             <!--Projects-->
             <div id="prj" class="uk-child-width-expand uk-grid-collapse" uk-grid>
-
+                
                 <div class="uk-margin-large-top">
+                    <!--Description-->
                     <div class="uk-flex uk-flex-column uk-flex-center uk-text-center">
                         <h1 class=" uk-heading-small uk-text-light">All kinds of projects</h1>
                         <div class="uk-margin-large-left uk-margin-large-right uk-text-left">
@@ -105,6 +119,7 @@
                                 <li><a class="uk-border-rounded" href="#">VBA</a></li>
                                 <li><a class="uk-border-rounded" href="#">Visual Studio</a></li>
                                 <li><a class="uk-border-rounded" href="#">Simio</a></li>
+                                <li><a class="uk-border-rounded" href="#">MATLAB</a></li>
                             </ul>
                         </div>
                     </div>
@@ -133,8 +148,19 @@
 
                         <li>
                             <div class="uk-card uk-card-default uk-card-body">
-                                <img data-src="Images/WP2.jpg" width="" height="" alt="" uk-img>
-                                <h2 class="uk-card-title uk-margin-remove-bottom uk-margin-middle-top">Backend & Frontend Development</h2>
+
+                                <div uk-slideshow="autoplay: true; autoplay-interval: 7500">
+                                    <div class="">
+                                        <ul class="uk-slideshow-items">
+                                            <li><img data-src="Images/WP2.jpg" width="" height="" alt="" uk-img></li>
+                                            <li><img data-src="Images/WP3.jpg" width="" height="" alt="" uk-img></li>
+                                            <li><img data-src="Images/WP1.jpg" width="" height="" alt="" uk-img></li>
+                                        </ul>
+                                    </div>
+                                    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                                </div>
+                                
+                                <h2 class="uk-card-title uk-margin-remove-bottom uk-margin-small-top">Backend & Frontend Development</h2>
                                 <p class="uk-text-muted uk-margin-remove">May 2017</p>
                                 <hr>
                                 <p>Development of a DataBase in <em>MySQL</em> that can be accessed through a local website. 
@@ -162,17 +188,30 @@
 
                         </l1>
 
+                        <l1>
+
+                            <div class="uk-card uk-card-default uk-card-body">
+                                <img data-src="Images/WP3.jpg" width="" height="" alt="" uk-img>
+                                <h2 class="uk-card-title uk-margin-remove-bottom uk-margin-middle-top">Celestial Orbits Simulation</h2>
+                                <p class="uk-text-muted uk-margin-remove">May 2018</p>
+                                <hr>
+                                <p>Project Description, project description</p>
+                                <span class="uk-label uk-label-success">#MATLAB</span>
+                            </div>
+
+                        </l1>
+
                     </ul>
 
                 </div>
 
             </div>
-            <!--Contact Information-->
-            <div class="uk-background-secondary uk-height-extend" id="ctc">
+            <!--Miscellaneous-->
+            <div id="msc" class="uk-background-secondary uk-height-extend" >
                 <div class="uk-text-light uk-light uk-height-medium uk-child-width-expand uk-grid-collapse" uk-grid>
                     <div class="uk-height-1-1">
                         <div class="uk-position-relative uk-position-center">
-                        <h1 class="uk-heading-small uk-text-light">Contact Info. & Miscellaneous</h1>
+                        <h1 class="uk-heading-small uk-text-light">Miscellaneous</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
                             minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
@@ -181,5 +220,9 @@
                     </div>
                 </div>
             </div>
+            <div id="ctc">
+
+            </div>
+
         </body>
     </html>
