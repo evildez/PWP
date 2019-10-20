@@ -1,104 +1,158 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <!--UIkit CSS -->
-        <link rel="stylesheet" type="text/css" href="CSS/uikit.min.css" />
-        <!-- UIkit JS -->
-        <script src="JS/uikit.min.js"></script>
-        <script src="JS/uikit-icons.min.js"></script>
-    </head>
-    <body>
-        <!--Navigation Bar-->
-        <div class="uk-background-default" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom">
-            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-                <!--Logo-->
-                <div class="uk-margin-large-left uk-navbar-left">
-                    <a class="uk-navbar-item uk-logo uk-padding-remove">Emilio Villarruel Fernández</a>
-                </div>
-                <!--Navigation-->
-                <div class="uk-navbar-right uk-margin-large-right" uk-margin>
-                    <ul class="uk-navbar-nav">
-                        <li class="">
-                            <a class="uk-padding-remove-vertical" href="#abt" uk-scroll="offset: 50">
-                                <button class="uk-button uk-button-text">About Me</button>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a class="uk-padding-remove-vertical" href="#prj" uk-scroll="offset: 50">
-                                <button class="uk-button uk-button-text">Projects</button>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a class="uk-padding-remove-vertical" href="">
-                                <button class="uk-button uk-button-text">Contact</button>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <!--Hero Title, Description and Button-->
-        <div class="uk-height-1-1" uk-height-viewport="offset-top: false; offset-bottom: 20">
-
-            <div class="uk-flex-auto uk-width-2-5 uk-position-large uk-position-center-left uk-padding-large uk-padding-remove-vertical uk-padding-remove-right">
-
-                <h1 class="uk-animation-fade uk-heading-medium uk-text-light">Hello Internet!</h1>
-
-                <div class="uk-text-meta uk-margin-medium-bottom uk-text-break">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat."</div>
-
-                <button class="uk-button uk-button-primary uk-border-pill">Contact Me</button>
-
-            </div>
-        </div>
-        <!--About-->
-        <div id="abt" class="uk-margin-medium-left uk-margin-medium-right">
-            <div class="uk-width-1-1 uk-background-primary">
-                <div class="uk-light uk-height-medium uk-child-width-expand uk-grid-collapse" uk-grid>
-                    <!--Section Title-->
-                    <div class="uk-height-1-1">
-                        <h1 class="uk-heading-small uk-text-light uk-position-relative uk-position-center">A bit about me</h1>
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <!--UIkit CSS -->
+            <link rel="stylesheet" type="text/css" href="CSS/uikit.min.css" />
+            <!-- UIkit JS -->
+            <script src="JS/uikit.min.js"></script>
+            <script src="JS/uikit-icons.min.js"></script>
+        </head>
+        <body>
+            <!--Navigation Bar-->
+            <div class="uk-background-default" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom">
+                <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                    <!--Logo-->
+                    <div class="uk-margin-large-left uk-navbar-left">
+                        <a class="uk-navbar-item uk-logo uk-padding-remove">Emilio Villarruel Fernández</a>
                     </div>
-                    <!--Section Description-->
-                    <div class="uk-height-1-1">
-                        <div class="uk-padding-large uk-text uk-text-light uk-position-relative uk-position-center uk-text-emphasis">
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat."
-                            <br/>
-                            <br>
-                            "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat."
+                    <!--Navigation-->
+                    <div class="uk-navbar-right uk-margin-large-right" uk-margin>
+                        <ul class="uk-navbar-nav">
+                            <li class="">
+                                <a class="uk-padding-remove-vertical" href="#abt" uk-scroll="offset: 50">
+                                    <button class="uk-button uk-button-text">About Me</button>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="uk-padding-remove-vertical" href="#prj" uk-scroll="offset: -0.5">
+                                    <button class="uk-button uk-button-text">Projects</button>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="uk-padding-remove-vertical" href="#ctc" uk-scroll>
+                                    <button class="uk-button uk-button-text">Contact</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!--Hero Title, Description and Button-->
+            <div class="uk-height-1-1" uk-height-viewport="offset-top: false; offset-bottom: 20">
+
+                <div class="uk-flex-auto uk-width-2-5 uk-position-large uk-position-center-left uk-padding-large uk-padding-remove-vertical uk-padding-remove-right">
+
+                    <h1 class="uk-animation-fade uk-heading-medium uk-text-light">Hello Internet!</h1>
+
+                    <div class="uk-text-meta uk-margin-medium-bottom uk-text-break">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat."</div>
+
+                    <button class="uk-button uk-button-primary uk-border-pill">Contact Me<span class="uk-icon uk-margin-small-left" uk-icon="mail"></span></button>
+
+                </div>
+            </div>
+            <!--About-->
+            <div id="abt" class="uk-margin-medium-left uk-margin-medium-right">
+                <div class="uk-width-1-1 uk-background-primary">
+                    <div class="uk-light uk-height-expand uk-child-width-expand uk-grid-collapse" uk-grid>
+                        <!--Section Title-->
+                        <div class="uk-container">
+                            <div class="uk-height-1-1 uk-flex uk-flex-center uk-flex-middle">
+                                <h1 class="uk-heading-small uk-text-light">A bit about me</h1>
+                            </div>
+                        </div>
+                        <!--Section Description-->
+                        <div class="uk-height-1-1">
+                            <div class="uk-padding-large uk-text-light uk-text-emphasis">
+                                <dl class="uk-description-list">
+                                    <dt class="uk-text-emphasis">Studies</dt>
+                                    <dd><i>Instituto Tecnológico Autónomo de México</i> - Industrial Engineering</dd>
+                                    <dt class="uk-text-emphasis">Experience</dt>
+                                    <dd><i>ITAM Intern</i> - International Office</dd>
+                                    <dt class="uk-text-emphasis">Languages</dt>
+                                    <dd><i>Spanish</i> - Native</dd>
+                                    <dd><i>English</i> - Proficient</dd>
+                                    <dd><i>MSL</i> - Learning</dd>
+                                </dl>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--Projects-->
-        <div id="prj" class="uk-child-width-expand uk-grid-collapse" uk-grid uk-height-match="row: false">
-            <div class="uk-margin-large-top">
-                <h1 class="uk-text-center uk-heading-small uk-text-light" uk-sticky="bottom: #offset; offset: 100">All kinds of projects</h1>
-            </div>
-            <div class="">
-                <div class="uk-panel uk-scrollable">
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <img src="Images/WP.jpg" width="" height="" alt="">
-                        <h2 class="uk-card-title">Project 1</h2>
-                        <hr>
-                        <p>Project Description, project description</p>
+            <!--Projects-->
+            <div id="prj" class="uk-child-width-expand uk-grid-collapse" uk-grid>
+
+                <div class="uk-margin-large-top">
+                    <div class="uk-flex uk-flex-column uk-flex-center uk-text-center">
+                        <h1 class=" uk-heading-small uk-text-light">All kinds of projects</h1>
+                        <div class="uk-margin-large-left uk-margin-large-right uk-text-left">
+                            <p>I have developed quite a few projects in a variety of programming 
+                            languages and software packages such as <b>Simio</b>, <b>VBA</b>, <b>Python</b>, <b>VisualStudio</b>, 
+                            <b>MATLAB</b> and more. Feel free to explore the projects that are listed in this 
+                            section.</p>
+                            <p>The summaries include a slideshow of screencaptures of the project, a brief 
+                            explanation and the tools used along its development.</p>
+                        </div>
+                        <!--Panel Navigation-->
+                        <div class="uk-flex uk-flex-center uk-margin-top uk-margin-large-bottom">
+                            <ul class="uk-subnav uk-subnav-pill" uk-switcher="connect: .panel-elements">
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <img data-src="Images/WP1.jpg" width="" height="" alt="" uk-img>
-                        <h2 class="uk-card-title">Project 2</h2>
-                        <hr>
-                        <p>Project Description, project description</p>
+                    <div></div>
+                </div>
+                <!--Panels-->
+                <div>
+
+                    <ul class="uk-switcher panel-elements uk-panel">
+
+                        <li>
+                            <div class="uk-card uk-card-default uk-card-body">
+                                <img data-src="Images/WP2.jpg" width="" height="" alt="" uk-img>
+                                <h2 class="uk-card-title">Project 3</h2>
+                                <hr>
+                                <p>Project Description, project description</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="uk-card uk-card-default uk-card-body">
+                                <img data-src="Images/WP.jpg" width="" height="" alt="" uk-img>
+                                <h2 class="uk-card-title">Project 1</h2>
+                                <hr>
+                                <p>Project Description, project description</p>
+                            </div>
+                            <div class="uk-card uk-card-default uk-card-body">
+                                <img data-src="Images/WP1.jpg" width="" height="" alt="" uk-img>
+                                <h2 class="uk-card-title">Project 2</h2>
+                                <hr>
+                                <p>Project Description, project description</p>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+            <!--Contact Information-->
+            <div class="uk-background-secondary uk-height-extend" id="ctc">
+                <div class="uk-text-light uk-light uk-height-medium uk-child-width-expand uk-grid-collapse" uk-grid>
+                    <div class="uk-height-1-1">
+                        <div class="uk-position-relative uk-position-center">
+                        <h1 class="uk-heading-small uk-text-light">Contact Info. & Miscellaneous</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                        </p>
+                    </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </body>
-</html>
+        </body>
+    </html>
