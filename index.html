@@ -1,5 +1,5 @@
     <!DOCTYPE html>
-    <html>
+    <html lang="en">
         <head>
             <title>Emilio Villarruel Fernández</title>
             <!--UIkit CSS -->
@@ -14,7 +14,7 @@
                 <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
                     <!--Logo-->
                     <div class="uk-margin-large-left uk-navbar-left">
-                        <a class="uk-navbar-item uk-logo uk-padding-remove">Emilio Villarruel Fernández</a>
+                        <a class="uk-navbar-item uk-logo uk-padding-remove" href="#lnd" uk-scroll="offset: 150">Emilio Villarruel Fernández</a>
                     </div>
                     <!--Navigation-->
                     <div class="uk-navbar-right uk-margin-large-right" uk-margin>
@@ -44,7 +44,7 @@
                 </nav>
             </div>
             <!--Hero Title, Description and Button-->
-            <div class="uk-height-1-1 uk-flex uk-flex-middle uk-flex-around" uk-height-viewport="offset-top: false; offset-bottom: 20">
+            <div id="lnd" class="uk-height-1-1 uk-flex uk-flex-middle uk-flex-around" uk-height-viewport="offset-top: false; offset-bottom: 20">
 
                 <div class="uk-margin-left uk-width-1-3">
 
@@ -83,11 +83,11 @@
                         <!--Section Description-->
                         <div class="uk-height-1-1">
                             <div class="uk-padding-large uk-text-light uk-text-emphasis">
-                                <dl class="uk-description-list">
-                                    <dt class="uk-text-emphasis">Studies</dt>
-                                    <dd><i>Instituto Tecnológico Autónomo de México</i> - Industrial Engineering</dd>
-                                    <dd>
-                                        <div uk-countdown="date: 2019-12-20T11:09:00+00:00">
+                                <dl class="uk-description-list uk-margin-remove">
+                                    <dt uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.5;" class="uk-text-emphasis">Studies</dt>
+                                    <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.5;"><i>Instituto Tecnológico Autónomo de México</i> - Industrial Engineering</dd>
+                                    <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.5;">
+                                        <div uk-countdown="date: 2019-12-20T20:00:00+00:00">
                                             <span class="uk-countdown-number uk-text-small uk-countdown-days"></span><small>d</small>
                                             <span class="uk-countdown-number uk-text-small uk-countdown-hours"></span><small>h</small>
                                             <span class="uk-countdown-number uk-text-small uk-countdown-minutes"></span><small>m</small>
@@ -95,12 +95,12 @@
                                             <small>(Time until graduation ceremony)</small>
                                         </div>
                                     </dd>
-                                    <dt class="uk-text-emphasis">Experience</dt>
-                                    <dd><i>ITAM Intern</i> - International Office</dd>
-                                    <dt class="uk-text-emphasis">Languages</dt>
-                                    <dd><i>Spanish</i> - Native</dd>
-                                    <dd><i>English</i> - Proficient</dd>
-                                    <dd><i>MSL</i> - Learning</dd>
+                                    <dt uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.5;" class="uk-text-emphasis">Experience</dt>
+                                    <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.5;"><i>ITAM Intern</i> - International Office</dd>
+                                    <dt uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.5;" class="uk-text-emphasis">Languages</dt>
+                                    <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.5;"><i>Spanish</i> - Native</dd>
+                                    <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.5;"><i>English</i> - Proficient</dd>
+                                    <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.5;"><i>MSL</i> - Learning</dd>
                                 </dl>
                             </div>
                         </div>
@@ -119,16 +119,18 @@
                             languages and software packages such as <b>Simio</b>, <b>VBA</b>, <b>Python</b>, <b>Visual Studio</b>, 
                             <b>MATLAB</b> and more. Feel free to explore the projects that are listed in this 
                             section.</p>
-                            <p>The summaries include a slideshow of screencaptures of the project, a brief 
-                            explanation and the tools used along its development.</p>
+                            <p>The summaries include a slideshow of screenshots, a brief 
+                            explanation and the tools used along the development of each project.</p>
                         </div>
                         <!--Panel Navigation-->
-                        <div class="uk-flex uk-flex-center uk-margin-top uk-margin-large-bottom">
-                            <ul class="uk-subnav uk-subnav-pill" uk-switcher="connect: .panel-elements">
+                        <div class="uk-flex uk-flex-center uk-margin-xlarge-left uk-margin-xlarge-right uk-margin-top">
+                            <ul class="uk-flex uk-flex-around uk-subnav uk-subnav-pill uk-margin-remove" uk-switcher="connect: .panel-elements">
                                 <li><a class="uk-border-rounded" href="#">VBA</a></li>
                                 <li><a class="uk-border-rounded" href="#">Visual Studio</a></li>
                                 <li><a class="uk-border-rounded" href="#">Simio</a></li>
                                 <li><a class="uk-border-rounded" href="#">MATLAB</a></li>
+                                <li><a class="uk-border-rounded" href="#">Python</a></li>
+                                <li><a class="uk-border-rounded" href="#">RSLogix</a></li>
                             </ul>
                         </div>
                     </div>
@@ -136,13 +138,23 @@
                 </div>
                 <!--Panels-->
                 <div>
-
                     <ul class="uk-switcher panel-elements uk-panel">
-
+                        <!--VBA-->
                         <li>
                             <div class="uk-card uk-card-default uk-card-body">
-                                <img data-src="Images/WP.jpg" width="" height="" alt="" uk-img>
-                                <h2 class="uk-card-title uk-margin-remove-bottom uk-margin-middle-top">Intra-day Liquidity Risk in Banking Simulation</h2>
+
+                                <div uk-slideshow="autoplay: true; autoplay-interval: 7500">
+                                    <div class="">
+                                        <ul class="uk-slideshow-items">
+                                            <li><img data-src="Images/WP.jpg" width="" height="" alt="" uk-img></li>
+                                            <li><img data-src="Images/WP2.jpg" width="" height="" alt="" uk-img></li>
+                                            <li><img data-src="Images/WP1.jpg" width="" height="" alt="" uk-img></li>
+                                        </ul>
+                                    </div>
+                                    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-margin-small-bottom"></ul>
+                                </div>
+                                
+                                <h2 class="uk-card-title uk-margin-remove">Intra-day Liquidity Risk in Banking Simulation</h2>
                                 <p class="uk-text-muted uk-margin-remove">May 2018</p>
                                 <hr>
                                 <p>Through the use of <i>LCG</i> and the generation of random variables we can replicate 
@@ -152,9 +164,8 @@
                                     our cash in hand.</p>
                                 <span class="uk-label uk-label-success">#Macros</span>
                             </div>
-                            
                         </li>
-
+                        <!--Visual-->
                         <li>
                             <div class="uk-card uk-card-default uk-card-body">
 
@@ -166,10 +177,10 @@
                                             <li><img data-src="Images/WP1.jpg" width="" height="" alt="" uk-img></li>
                                         </ul>
                                     </div>
-                                    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                                    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-margin-small-bottom"></ul>
                                 </div>
                                 
-                                <h2 class="uk-card-title uk-margin-remove-bottom uk-margin-small-top">Backend & Frontend Development</h2>
+                                <h2 class="uk-card-title uk-margin-remove">Backend & Frontend Development</h2>
                                 <p class="uk-text-muted uk-margin-remove">May 2017</p>
                                 <hr>
                                 <p>Development of a DataBase in <em>MySQL</em> that can be accessed through a local website. 
@@ -182,38 +193,60 @@
                                 <span class="uk-label uk-label-success">#HTML</span>
                                 <span class="uk-label uk-label-success">#CSS</span>
                             </div>
+                        
                         </li>
-
-                        <l1>
-
+                        <!--Simio-->
+                        <li>
                             <div class="uk-card uk-card-default uk-card-body">
                                 <img data-src="Images/WP1.jpg" width="" height="" alt="" uk-img>
                                 <h2 class="uk-card-title uk-margin-remove-bottom uk-margin-middle-top">Seed Production Facility Simulation</h2>
                                 <p class="uk-text-muted uk-margin-remove">December 2018</p>
                                 <hr>
-                                <p>Project Description, project description</p>
+                                <p>In this project we needed to simulate the impact of choosing certain 
+                                    alternatives regarding seed production in a facility. The alternatives 
+                                    ranged from opening a second distribution lane within the packaging 
+                                    area of the production process, to allowing the sorting of different 
+                                    kinds of seeds to be done simultaneously in two cellars.
+                                </p>
                                 <span class="uk-label uk-label-success">#Simio</span>
                             </div>
-
-                        </l1>
-
-                        <l1>
-
+                        </li>
+                        <!--Matlab-->
+                        <li>
                             <div class="uk-card uk-card-default uk-card-body">
                                 <img data-src="Images/WP3.jpg" width="" height="" alt="" uk-img>
                                 <h2 class="uk-card-title uk-margin-remove-bottom uk-margin-middle-top">Celestial Orbits Simulation</h2>
                                 <p class="uk-text-muted uk-margin-remove">May 2018</p>
                                 <hr>
-                                <p>Project Description, project description</p>
+                                <p>Using ordinal differential equations </p>
                                 <span class="uk-label uk-label-success">#MATLAB</span>
                             </div>
-
-                        </l1>
-
+                        </li>
+                        <!--Python-->
+                        <li>
+                            <div class="uk-card uk-card-default uk-card-body">
+                                <img data-src="Images/WP3.jpg" width="" height="" alt="" uk-img>
+                                <h2 class="uk-card-title uk-margin-remove-bottom uk-margin-middle-top">Celestial Orbits Simulation</h2>
+                                <p class="uk-text-muted uk-margin-remove">May 2018</p>
+                                <hr>
+                                <p>Using ordinal differential equations </p>
+                                <span class="uk-label uk-label-success">#Python</span>
+                            </div>
+                        </li>
+                        <!--RSLogix-->
+                        <li>
+                            <div class="uk-card uk-card-default uk-card-body">
+                                <img data-src="Images/WP3.jpg" width="" height="" alt="" uk-img>
+                                <h2 class="uk-card-title uk-margin-remove-bottom uk-margin-middle-top">Celestial Orbits Simulation</h2>
+                                <p class="uk-text-muted uk-margin-remove">May 2018</p>
+                                <hr>
+                                <p>Using ordinal differential equations </p>
+                                <span class="uk-label uk-label-success">#RSLogix</span>
+                                <span class="uk-label uk-label-success">#FluidSim</span>
+                            </div>
+                        </li>
                     </ul>
-
                 </div>
-
             </div>
             <!--Miscellaneous-->
             <div id="msc" class="uk-background-secondary uk-height-extend" >
