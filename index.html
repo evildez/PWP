@@ -24,7 +24,8 @@
                 <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
                     <!--Logo-->
                     <div class="uk-margin-large-left uk-navbar-left">
-                        <a class="uk-navbar-item uk-logo uk-padding-remove" href="#lnd" uk-scroll="offset: 150">Emilio Villarruel Fernández</a>
+                        <a class="uk-navbar-item uk-logo uk-padding-remove uk-visible@s" href="#lnd" uk-scroll="offset: 150">Emilio Villarruel Fernández</a>
+                        <a class="uk-navbar-item uk-logo uk-padding-remove uk-hidden@s" href="#lnd" uk-scroll="offset: 150">EVF</a>
                     </div>
                     <!--Navigation-->
                     <div class="uk-visible@m uk-navbar-right uk-margin-large-right" uk-margin>
@@ -53,7 +54,7 @@
                     </div>
                     <!--Mobile Navigation-->
                     <a uk-toggle href="#off-canv" class="uk-hidden@m uk-navbar-right uk-margin-large-right uk-icon" uk-icon="menu"></a>
-                    <div id="off-canv" uk-offcanvas="flip: true; overlay: true; mode: push">
+                    <div id="off-canv" uk-offcanvas="flip: true; overlay: true; mode: slide">
                         <div class="uk-offcanvas-bar">
                             <ul class="uk-nav uk-nav-default">
                                 <li><a class="uk-text-large uk-padding-remove-vertical" href="#abt" uk-scroll="offset: 50">About Me</a></li>
@@ -102,38 +103,57 @@
             </div>
 
             <!--About-->
-            <div id="abt" class="uk-margin-medium-left uk-margin-medium-right">
-                <div class="uk-width-1-1 uk-background-primary">
-                    <div class="uk-light uk-grid-collapse uk-child-width-1-2@m" uk-grid>
-                        <!--Section Title & Description-->
-                        <div class="uk-flex uk-flex-middle">
-                            <div class="uk-text-light uk-text-emphasis uk-padding">
-                                <h1 uk-parallax="y: -250,0; opacity: 0, 1; viewport: 0.5;" class="uk-visible@s uk-heading-small uk-text-light uk-text-center">A bit about me</h1>
-                                <p uk-parallax="y: 250, 0; opacity: 0, 1; viewport: 0.39;" class="uk-visible@s uk-text-justify">
-                                    Hello there my name is <b>Emilio</b>, I'm pleased to meet you. 
-                                    I'm currently a full time student at <i>ITAM</i> and will be concluding my studies 
-                                    in winter of 2019. I created this website with the purpose of presenting me 
-                                    to the world and as a little challenge to myself. I hope you find interesting what 
-                                    I have came up with and what I have done in my journey as a student.</p>
-                                <h1 class="uk-hidden@s uk-heading-small uk-text-light uk-text-center">A bit about me</h1>
-                                <p class="uk-hidden@s uk-text-justify">
-                                    Hello there my name is <b>Emilio</b>, I'm pleased to meet you. 
-                                    I'm currently a full time student at <i>ITAM</i> and will be concluding my studies 
-                                    in winter of 2019. I created this website with the purpose of presenting me 
-                                    to the world and as a little challenge to myself. I hope you find interesting what 
-                                    I have came up with and what I have done in my journey as a student.</p>
-                            </div>
+            <div id="abt" class="uk-width-1-1 uk-background-primary">
+                <div class="uk-light uk-grid-collapse uk-child-width-1-2@m" uk-grid>
+                    <!--Section Title & Description-->
+                    <div class="uk-flex uk-flex-middle">
+                        <div class="uk-text-light uk-text-emphasis uk-padding">
+                            <h1 uk-parallax="y: -250,0; opacity: 0, 1; viewport: 0.5;" class="uk-visible@s uk-heading-small uk-text-light uk-text-center">A bit about me</h1>
+                            <p uk-parallax="y: 250, 0; opacity: 0, 1; viewport: 0.39;" class="uk-visible@s uk-text-justify">
+                                Hello there my name is <b>Emilio</b>, I'm pleased to meet you. 
+                                I'm currently a full time student at <i>ITAM</i> and will be concluding my studies 
+                                in winter of 2019. I created this website with the purpose of presenting me 
+                                to the world and as a little challenge to myself. I hope you find interesting what 
+                                I have came up with and what I have done in my journey as a student.</p>
+                            <h1 class="uk-hidden@s uk-heading-small uk-text-light uk-text-center">A bit about me</h1>
+                            <p class="uk-hidden@s uk-text-justify">
+                                Hello there my name is <b>Emilio</b>, I'm pleased to meet you. 
+                                I'm currently a full time student at <i>ITAM</i> and will be concluding my studies 
+                                in winter of 2019. I created this website with the purpose of presenting me 
+                                to the world and as a little challenge to myself. I hope you find interesting what 
+                                I have came up with and what I have done in my journey as a student.</p>
                         </div>
-                        <!--Divider-->
-                        <hr class="uk-text-center uk-divider-small uk-hidden@m">
-                        <!--Section Description-->
-                        <div class="uk-height-1-1">
-                            <div class="uk-padding uk-text-light uk-text-emphasis">
-                                <!--Desktop Friendly-->
-                                <dl class="uk-description-list uk-margin-remove uk-visible@s">
-                                    <dt uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;" class="uk-text-emphasis">Studies</dt>
-                                    <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>Instituto Tecnológico Autónomo de México</i> - Industrial Engineering</dd>
-                                    <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;">
+                    </div>
+                    <!--Divider-->
+                    <hr class="uk-text-center uk-divider-small uk-hidden@m">
+                    <!--Section Description-->
+                    <div class="uk-height-1-1">
+                        <div class="uk-padding uk-flex uk-flex-center uk-text-light uk-text-emphasis">
+                            <!--Desktop Friendly-->
+                            <dl class="uk-description-list uk-margin-remove uk-visible@s">
+                                <dt uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;" class="uk-text-emphasis">Studies</dt>
+                                <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>Instituto Tecnológico Autónomo de México</i> - Industrial Engineering</dd>
+                                <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;">
+                                    <div uk-countdown="date: 2019-12-20T20:00:00+00:00">
+                                        <span class="uk-countdown-number uk-text-small uk-countdown-days"></span><small>d</small>
+                                        <span class="uk-countdown-number uk-text-small uk-countdown-hours"></span><small>h</small>
+                                        <span class="uk-countdown-number uk-text-small uk-countdown-minutes"></span><small>m</small>
+                                        <span class="uk-countdown-number uk-text-small uk-countdown-seconds"></span><small>s</small>
+                                        <small>(Time until graduation ceremony)</small>
+                                    </div>
+                                </dd>
+                                <dt uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;" class="uk-text-emphasis">Experience</dt>
+                                <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>ITAM Intern</i> - International Office</dd>
+                                <dt uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;" class="uk-text-emphasis">Languages</dt>
+                                <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>Spanish</i> - Native</dd>
+                                <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>English</i> - Proficient</dd>
+                                <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>MSL</i> - Learning</dd>
+                            </dl>
+                            <!--Mobile Friendly-->
+                            <dl class="uk-description-list uk-margin-remove uk-hidden@s">
+                                    <dt class="uk-text-emphasis">Studies</dt>
+                                    <dd><i>Instituto Tecnológico Autónomo de México</i> - Industrial Engineering</dd>
+                                    <dd>
                                         <div uk-countdown="date: 2019-12-20T20:00:00+00:00">
                                             <span class="uk-countdown-number uk-text-small uk-countdown-days"></span><small>d</small>
                                             <span class="uk-countdown-number uk-text-small uk-countdown-hours"></span><small>h</small>
@@ -142,34 +162,13 @@
                                             <small>(Time until graduation ceremony)</small>
                                         </div>
                                     </dd>
-                                    <dt uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;" class="uk-text-emphasis">Experience</dt>
-                                    <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>ITAM Intern</i> - International Office</dd>
-                                    <dt uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;" class="uk-text-emphasis">Languages</dt>
-                                    <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>Spanish</i> - Native</dd>
-                                    <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>English</i> - Proficient</dd>
-                                    <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>MSL</i> - Learning</dd>
+                                    <dt class="uk-text-emphasis">Experience</dt>
+                                    <dd><i>ITAM Intern</i> - International Office</dd>
+                                    <dt class="uk-text-emphasis">Languages</dt>
+                                    <dd><i>Spanish</i> - Native</dd>
+                                    <dd><i>English</i> - Proficient</dd>
+                                    <dd><i>MSL</i> - Learning</dd>
                                 </dl>
-                                <!--Mobile Friendly-->
-                                <dl class="uk-description-list uk-margin-remove uk-hidden@s">
-                                        <dt class="uk-text-emphasis">Studies</dt>
-                                        <dd><i>Instituto Tecnológico Autónomo de México</i> - Industrial Engineering</dd>
-                                        <dd>
-                                            <div uk-countdown="date: 2019-12-20T20:00:00+00:00">
-                                                <span class="uk-countdown-number uk-text-small uk-countdown-days"></span><small>d</small>
-                                                <span class="uk-countdown-number uk-text-small uk-countdown-hours"></span><small>h</small>
-                                                <span class="uk-countdown-number uk-text-small uk-countdown-minutes"></span><small>m</small>
-                                                <span class="uk-countdown-number uk-text-small uk-countdown-seconds"></span><small>s</small>
-                                                <small>(Time until graduation ceremony)</small>
-                                            </div>
-                                        </dd>
-                                        <dt class="uk-text-emphasis">Experience</dt>
-                                        <dd><i>ITAM Intern</i> - International Office</dd>
-                                        <dt class="uk-text-emphasis">Languages</dt>
-                                        <dd><i>Spanish</i> - Native</dd>
-                                        <dd><i>English</i> - Proficient</dd>
-                                        <dd><i>MSL</i> - Learning</dd>
-                                    </dl>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -178,10 +177,10 @@
             <!--Projects-->
             <div id="prj" class="uk-child-width-1-2@m uk-grid-collapse" uk-grid>
                 <!--Information-->
-                <div class="uk-padding uk-padding-remove-horizontal">
+                <div class="uk-flex uk-flex-middle uk-padding uk-padding-remove-horizontal">
                     <!--Description-->
                     <div class="uk-flex uk-flex-column uk-flex-center uk-text-center">
-                        <h1 class=" uk-heading-small uk-text-light">All kinds of projects</h1>
+                        <h1 class="uk-margin-auto uk-heading-small uk-text-light">All kinds of projects</h1>
                         <div class="uk-margin-large-left uk-margin-large-right uk-text-left">
                             <p>I have developed quite a few projects in a variety of programming 
                             languages and software packages such as <b>Simio</b>, <b>VBA</b>, <b>Python</b>, <b>Visual Studio</b>, 
@@ -191,7 +190,7 @@
                             explanation and the tools used along the development of each project.</p>
                         </div>
                         <!--Panel Navigation-->
-                        <div class="uk-flex uk-flex-center uk-margin-xlarge-left uk-margin-xlarge-right uk-margin-top">
+                        <div class="uk-flex uk-flex-center uk-flex-around uk-margin-top">
                             <ul class="uk-flex uk-flex-around uk-subnav uk-subnav-pill uk-margin-remove" uk-switcher="connect: .panel-elements">
                                 <li><a class="uk-border-rounded" href="#">VBA</a></li>
                                 <li><a class="uk-border-rounded" href="#">Visual Studio</a></li>
@@ -209,18 +208,16 @@
                         <!--VBA-->
                         <li>
                             <div class="uk-card uk-card-default uk-card-body">
-
-                                <div uk-slideshow="autoplay: true; autoplay-interval: 7500">
+                                <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
                                     <div class="">
                                         <ul class="uk-slideshow-items">
-                                            <li><img data-src="Images/WP.jpg" width="" height="" alt="" uk-img></li>
-                                            <li><img data-src="Images/WP2.jpg" width="" height="" alt="" uk-img></li>
-                                            <li><img data-src="Images/WP1.jpg" width="" height="" alt="" uk-img></li>
+                                            <li><img data-src="Images/VBA/VBA_1.png" width="" height="" alt="" uk-img></li>
+                                            <li><img data-src="Images/VBA/VBA_2.png" width="" height="" alt="" uk-img></li>
+                                            <li><img data-src="Images/VBA/VBA_3.png" width="" height="" alt="" uk-img></li>
                                         </ul>
                                     </div>
                                     <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-margin-small-bottom"></ul>
-                                </div>
-                                
+                                </div> 
                                 <h2 class="uk-card-title uk-margin-remove">Intra-day Liquidity Risk in Banking Simulation</h2>
                                 <p class="uk-text-muted uk-margin-remove">May 2018</p>
                                 <hr>
@@ -236,7 +233,7 @@
                         <li>
                             <div class="uk-card uk-card-default uk-card-body">
 
-                                <div uk-slideshow="autoplay: true; autoplay-interval: 7500">
+                                <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
                                     <div class="">
                                         <ul class="uk-slideshow-items">
                                             <li><img data-src="Images/WP2.jpg" width="" height="" alt="" uk-img></li>
@@ -265,8 +262,17 @@
                         <!--Simio-->
                         <li>
                             <div class="uk-card uk-card-default uk-card-body">
-                                <img data-src="Images/WP1.jpg" width="" height="" alt="" uk-img>
-                                <h2 class="uk-card-title uk-margin-remove-bottom uk-margin-middle-top">Seed Production Facility Simulation</h2>
+                                <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
+                                    <div class="">
+                                        <ul class="uk-slideshow-items">
+                                            <li><img data-src="Images/WP2.jpg" width="" height="" alt="" uk-img></li>
+                                            <li><img data-src="Images/WP3.jpg" width="" height="" alt="" uk-img></li>
+                                            <li><img data-src="Images/WP1.jpg" width="" height="" alt="" uk-img></li>
+                                        </ul>
+                                    </div>
+                                    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-margin-small-bottom"></ul>
+                                </div>
+                                <h2 class="uk-card-title uk-margin-remove">Seed Production Facility Simulation</h2>
                                 <p class="uk-text-muted uk-margin-remove">December 2018</p>
                                 <hr>
                                 <p>In this project we needed to simulate the impact of choosing certain 
@@ -281,8 +287,17 @@
                         <!--Matlab-->
                         <li>
                             <div class="uk-card uk-card-default uk-card-body">
-                                <img data-src="Images/WP3.jpg" width="" height="" alt="" uk-img>
-                                <h2 class="uk-card-title uk-margin-remove-bottom uk-margin-middle-top">Celestial Orbits Simulation</h2>
+                                <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
+                                    <div class="">
+                                        <ul class="uk-slideshow-items">
+                                            <li><img data-src="Images/WP2.jpg" width="" height="" alt="" uk-img></li>
+                                            <li><img data-src="Images/WP3.jpg" width="" height="" alt="" uk-img></li>
+                                            <li><img data-src="Images/WP1.jpg" width="" height="" alt="" uk-img></li>
+                                        </ul>
+                                    </div>
+                                    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-margin-small-bottom"></ul>
+                                </div>
+                                <h2 class="uk-card-title uk-margin-remove">Celestial Orbits Simulation</h2>
                                 <p class="uk-text-muted uk-margin-remove">May 2018</p>
                                 <hr>
                                 <p>Using ordinal differential equations </p>
@@ -292,8 +307,17 @@
                         <!--Python-->
                         <li>
                             <div class="uk-card uk-card-default uk-card-body">
-                                <img data-src="Images/WP3.jpg" width="" height="" alt="" uk-img>
-                                <h2 class="uk-card-title uk-margin-remove-bottom uk-margin-middle-top">Celestial Orbits Simulation</h2>
+                                <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
+                                    <div class="">
+                                        <ul class="uk-slideshow-items">
+                                            <li><img data-src="Images/WP2.jpg" width="" height="" alt="" uk-img></li>
+                                            <li><img data-src="Images/WP3.jpg" width="" height="" alt="" uk-img></li>
+                                            <li><img data-src="Images/WP1.jpg" width="" height="" alt="" uk-img></li>
+                                        </ul>
+                                    </div>
+                                    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-margin-small-bottom"></ul>
+                                </div>
+                                <h2 class="uk-card-title uk-margin-remove">Celestial Orbits Simulation</h2>
                                 <p class="uk-text-muted uk-margin-remove">May 2018</p>
                                 <hr>
                                 <p>Using ordinal differential equations </p>
@@ -303,8 +327,17 @@
                         <!--RSLogix-->
                         <li>
                             <div class="uk-card uk-card-default uk-card-body">
-                                <img data-src="Images/WP3.jpg" width="" height="" alt="" uk-img>
-                                <h2 class="uk-card-title uk-margin-remove-bottom uk-margin-middle-top">Celestial Orbits Simulation</h2>
+                                <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
+                                    <div class="">
+                                        <ul class="uk-slideshow-items">
+                                            <li><img data-src="Images/WP2.jpg" width="" height="" alt="" uk-img></li>
+                                            <li><img data-src="Images/WP3.jpg" width="" height="" alt="" uk-img></li>
+                                            <li><img data-src="Images/WP1.jpg" width="" height="" alt="" uk-img></li>
+                                        </ul>
+                                    </div>
+                                    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-margin-small-bottom"></ul>
+                                </div>
+                                <h2 class="uk-card-title uk-margin-remove">Celestial Orbits Simulation</h2>
                                 <p class="uk-text-muted uk-margin-remove">May 2018</p>
                                 <hr>
                                 <p>Using ordinal differential equations </p>
@@ -318,16 +351,14 @@
             
             <!--Miscellaneous-->
             <div id="msc" class="uk-background-secondary uk-height-extend" >
-                <div class="uk-text-light uk-light uk-height-medium uk-child-width-expand uk-grid-collapse" uk-grid>
-                    <div class="uk-height-1-1">
-                        <div class="uk-position-relative uk-position-center">
+                <div class="uk-light uk-flex uk-flex-middle uk-margin-auto">
+                    <div class="uk-padding-large uk-width-2-3">
                         <h1 class="uk-heading-small uk-margin-remove-bottom uk-text-light">Miscellaneous</h1>
                         <p class="uk-margin-remove uk-text-small uk-text-italic">(a bit more about me)</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        <p class="uk-text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
                             minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
                         </p>
-                    </div>
                     </div>
                 </div>
             </div>
