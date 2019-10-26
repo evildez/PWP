@@ -8,7 +8,7 @@
             <script src="JS/uikit.min.js"></script>
             <script src="JS/uikit-icons.min.js"></script>
             <!--Responsive-->
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
             <!--Language-->
             <meta charset="UTF-8">
             <!--Description-->
@@ -108,8 +108,15 @@
                         <!--Section Title & Description-->
                         <div class="uk-flex uk-flex-middle">
                             <div class="uk-text-light uk-text-emphasis uk-padding">
-                                <h1 uk-parallax="y: -250,0; opacity: 0, 1; viewport: 0.5;" class="uk-heading-small uk-text-light uk-text-center">A bit about me</h1>
-                                <p uk-parallax="y: 250, 0; opacity: 0, 1; viewport: 0.39;" class="uk-text-justify">
+                                <h1 uk-parallax="y: -250,0; opacity: 0, 1; viewport: 0.5;" class="uk-visible@s uk-heading-small uk-text-light uk-text-center">A bit about me</h1>
+                                <p uk-parallax="y: 250, 0; opacity: 0, 1; viewport: 0.39;" class="uk-visible@s uk-text-justify">
+                                    Hello there my name is <b>Emilio</b>, I'm pleased to meet you. 
+                                    I'm currently a full time student at <i>ITAM</i> and will be concluding my studies 
+                                    in winter of 2019. I created this website with the purpose of presenting me 
+                                    to the world and as a little challenge to myself. I hope you find interesting what 
+                                    I have came up with and what I have done in my journey as a student.</p>
+                                <h1 class="uk-hidden@s uk-heading-small uk-text-light uk-text-center">A bit about me</h1>
+                                <p class="uk-hidden@s uk-text-justify">
                                     Hello there my name is <b>Emilio</b>, I'm pleased to meet you. 
                                     I'm currently a full time student at <i>ITAM</i> and will be concluding my studies 
                                     in winter of 2019. I created this website with the purpose of presenting me 
@@ -122,7 +129,8 @@
                         <!--Section Description-->
                         <div class="uk-height-1-1">
                             <div class="uk-padding uk-text-light uk-text-emphasis">
-                                <dl class="uk-description-list uk-margin-remove">
+                                <!--Desktop Friendly-->
+                                <dl class="uk-description-list uk-margin-remove uk-visible@s">
                                     <dt uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;" class="uk-text-emphasis">Studies</dt>
                                     <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>Instituto Tecnológico Autónomo de México</i> - Industrial Engineering</dd>
                                     <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;">
@@ -141,6 +149,26 @@
                                     <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>English</i> - Proficient</dd>
                                     <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>MSL</i> - Learning</dd>
                                 </dl>
+                                <!--Mobile Friendly-->
+                                <dl class="uk-description-list uk-margin-remove uk-hidden@s">
+                                        <dt class="uk-text-emphasis">Studies</dt>
+                                        <dd><i>Instituto Tecnológico Autónomo de México</i> - Industrial Engineering</dd>
+                                        <dd>
+                                            <div uk-countdown="date: 2019-12-20T20:00:00+00:00">
+                                                <span class="uk-countdown-number uk-text-small uk-countdown-days"></span><small>d</small>
+                                                <span class="uk-countdown-number uk-text-small uk-countdown-hours"></span><small>h</small>
+                                                <span class="uk-countdown-number uk-text-small uk-countdown-minutes"></span><small>m</small>
+                                                <span class="uk-countdown-number uk-text-small uk-countdown-seconds"></span><small>s</small>
+                                                <small>(Time until graduation ceremony)</small>
+                                            </div>
+                                        </dd>
+                                        <dt class="uk-text-emphasis">Experience</dt>
+                                        <dd><i>ITAM Intern</i> - International Office</dd>
+                                        <dt class="uk-text-emphasis">Languages</dt>
+                                        <dd><i>Spanish</i> - Native</dd>
+                                        <dd><i>English</i> - Proficient</dd>
+                                        <dd><i>MSL</i> - Learning</dd>
+                                    </dl>
                             </div>
                         </div>
                     </div>
