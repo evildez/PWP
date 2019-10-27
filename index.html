@@ -19,6 +19,7 @@
             <meta name="author" content="Emilio Villarruel Fernández">
         </head>
         <body style="overflow-x: hidden;">
+
             <!--Navigation Bar-->
             <div class="uk-background-default" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom">
                 <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
@@ -54,13 +55,13 @@
                     </div>
                     <!--Mobile Navigation-->
                     <a uk-toggle href="#off-canv" class="uk-hidden@m uk-navbar-right uk-margin-large-right uk-icon" uk-icon="menu"></a>
-                    <div id="off-canv" uk-offcanvas="flip: true; overlay: true; mode: slide">
-                        <div class="uk-offcanvas-bar">
-                            <ul class="uk-nav uk-nav-default">
-                                <li><a class="uk-text-large uk-padding-remove-vertical" href="#abt" uk-scroll="offset: 50">About Me</a></li>
-                                <li><a class="uk-text-large uk-padding-remove-vertical" href="#prj" uk-scroll="offset: -0.5">Projects</a></li>
-                                <li><a class="uk-text-large uk-padding-remove-vertical" href="#msc" uk-scroll>Miscellaneous</a></li>
-                                <li><a class="uk-text-large uk-padding-remove-vertical" href="#ctc" uk-scroll>Contact</a></li>
+                    <div id="off-canv" uk-offcanvas="flip: true; overlay: true; mode: slide;">
+                        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                                <li><a class="uk-padding-remove-vertical" href="#abt" uk-scroll="offset: 50">About Me</a></li>
+                                <li><a class="uk-padding-remove-vertical" href="#prj" uk-scroll="offset: -0.5">Projects</a></li>
+                                <li><a class="uk-padding-remove-vertical" href="#msc" uk-scroll>Miscellaneous</a></li>
+                                <li><a class="uk-padding-remove-vertical" href="#ctc" uk-scroll>Contact</a></li>
                             </ul>                            
                         </div>
 
@@ -70,27 +71,25 @@
 
             <!--Hero Title, Description and Button-->
             <div id="lnd" class="uk-height-1-1 uk-flex uk-flex-middle" uk-height-viewport="offset-top: false; offset-bottom: 20">
-
                 <div class=" uk-flex uk-flex-around uk-child-width-1-1@m uk-child-width-1-3@l uk-grid-large" uk-grid>
-
                     <div class="uk-margin-xlarge-left uk-margin-xlarge-right uk-margin-remove-left@m uk-margin-remove-right@m uk-width-1-3@m">
                         <!--Title, Desription & Buttons-->
                         <div class="uk-flex-auto">
-
                             <h1 class="uk-heading-medium uk-text-light">Hello Internet!</h1>
-
                             <div class="uk-text-meta uk-margin-medium-bottom">
-                                I'm pleased to welcome you to this little porrtfolio thingy that displays 
-                                some of the work that I have done along my carrer. Some of them are quite 
-                                challenging and interesting if I say so myself. Perseverance, planning and 
-                                innovation are the most valuable things that these projects taught me during 
-                                their development. I hope you enjoy. <a class="uk-text-primary uk-hidden@s">Want to download my resume?</a></div>
-                            
+                                <p>
+                                    I'm pleased to welcome you to this porrtfolio thingy that displays some of the work 
+                                    that I have done along my carrer. Some of the projects that are listed here are quite 
+                                    challenging and interesting if I say so myself. I hope you enjoy my little collection 
+                                    of coding and simulation projects.
+                                </p>
+                                <p class="uk-hidden@s">
+                                    Interested? <a class="uk-text-primary">Download my resume.</a>
+                                </p>
+                            </div>
                             <button class="uk-visible@s uk-button uk-button-default uk-border-pill">Resume<span class="uk-icon uk-margin-small-left" uk-icon="download"></span></button>
                             <button class="uk-visible@s uk-button uk-button-primary uk-border-pill">Contact Me<span class="uk-icon uk-margin-small-left" uk-icon="mail"></span></button>
-
                         </div>
-
                     </div>
                     
                     <!--SVG Image-->
@@ -112,16 +111,18 @@
                             <p uk-parallax="y: 250, 0; opacity: 0, 1; viewport: 0.39;" class="uk-visible@s uk-text-justify">
                                 Hello there my name is <b>Emilio</b>, I'm pleased to meet you. 
                                 I'm currently a full time student at <i>ITAM</i> and will be concluding my studies 
-                                in winter of 2019. I created this website with the purpose of presenting me 
-                                to the world and as a little challenge to myself. I hope you find interesting what 
-                                I have came up with and what I have done in my journey as a student.</p>
+                                in winter of 2019. I created this website with the purpose of presenting me and my work 
+                                to the world. I consider myself passionate about learning a bit of everything that the 
+                                world has at our disposition. My friends and colleagues consider me a school addict 
+                                and I take that gracefully as a compliment.</p>
                             <h1 class="uk-hidden@s uk-heading-small uk-text-light uk-text-center">A bit about me</h1>
                             <p class="uk-hidden@s uk-text-justify">
                                 Hello there my name is <b>Emilio</b>, I'm pleased to meet you. 
                                 I'm currently a full time student at <i>ITAM</i> and will be concluding my studies 
-                                in winter of 2019. I created this website with the purpose of presenting me 
-                                to the world and as a little challenge to myself. I hope you find interesting what 
-                                I have came up with and what I have done in my journey as a student.</p>
+                                in winter of 2019. I created this website with the purpose of presenting me and my work 
+                                to the world. I consider myself passionate about learning a bit of everything that the 
+                                world has at our disposition. My friends and colleagues consider me a school addict 
+                                and I take that gracefully as a compliment.</p>
                         </div>
                     </div>
                     <!--Divider-->
@@ -148,6 +149,7 @@
                                 <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>Spanish</i> - Native</dd>
                                 <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>English</i> - Proficient</dd>
                                 <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>MSL</i> - Learning</dd>
+                                <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>Japanese</i> - <span class="uk-text-uppercase">Planning</span></dd>
                             </dl>
                             <!--Mobile Friendly-->
                             <dl class="uk-description-list uk-margin-remove uk-hidden@s">
@@ -168,6 +170,7 @@
                                     <dd><i>Spanish</i> - Native</dd>
                                     <dd><i>English</i> - Proficient</dd>
                                     <dd><i>MSL</i> - Learning</dd>
+                                    <dd><i>Japanese</i> - <span class="uk-text-uppercase">Planning</span></dd>
                                 </dl>
                         </div>
                     </div>
@@ -180,7 +183,7 @@
                 <div class="uk-flex uk-flex-middle uk-padding uk-padding-remove-horizontal">
                     <!--Description-->
                     <div class="uk-flex uk-flex-column uk-flex-center uk-text-center">
-                        <h1 class="uk-margin-auto uk-heading-small uk-text-light">All kinds of projects</h1>
+                        <h1 class="uk-margin-left uk-margin-right uk-margin-remove-right@s uk-margin-remove-left@s uk-heading-small uk-text-light">All kinds of projects</h1>
                         <div class="uk-margin-large-left uk-margin-large-right uk-text-left">
                             <p>I have developed quite a few projects in a variety of programming 
                             languages and software packages such as <b>Simio</b>, <b>VBA</b>, <b>Python</b>, <b>Visual Studio</b>, 
@@ -236,9 +239,11 @@
                                 <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
                                     <div class="">
                                         <ul class="uk-slideshow-items">
-                                            <li><img data-src="Images/WP2.jpg" width="" height="" alt="" uk-img></li>
-                                            <li><img data-src="Images/WP3.jpg" width="" height="" alt="" uk-img></li>
-                                            <li><img data-src="Images/WP1.jpg" width="" height="" alt="" uk-img></li>
+                                            <li><img data-src="Images/Visual/Visual_1.png" width="" height="" alt="" uk-img></li>
+                                            <li><img data-src="Images/Visual/Visual_2.png" width="" height="" alt="" uk-img></li>
+                                            <li><img data-src="Images/Visual/Visual_3.png" width="" height="" alt="" uk-img></li>
+                                            <li><img data-src="Images/Visual/Visual_4.png" width="" height="" alt="" uk-img></li>
+                                            <li><img data-src="Images/Visual/Visual_5.png" width="" height="" alt="" uk-img></li>
                                         </ul>
                                     </div>
                                     <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-margin-small-bottom"></ul>
@@ -352,7 +357,7 @@
             <!--Miscellaneous-->
             <div id="msc" class="uk-background-secondary uk-height-extend" >
                 <div class="uk-light uk-flex uk-flex-middle uk-margin-auto">
-                    <div class="uk-padding-large uk-width-2-3">
+                    <div class="uk-padding-large uk-width-2-3@m">
                         <h1 class="uk-heading-small uk-margin-remove-bottom uk-text-light">Miscellaneous</h1>
                         <p class="uk-margin-remove uk-text-small uk-text-italic">(a bit more about me)</p>
                         <p class="uk-text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
