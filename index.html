@@ -1,367 +1,409 @@
-    <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <title>Emilio Villarruel Fernández</title>
-            <!--UIkit CSS-->
-            <link rel="stylesheet" type="text/css" href="CSS/uikit.min.css" />
-            <!--UIkit JS-->
-            <script src="JS/uikit.min.js"></script>
-            <script src="JS/uikit-icons.min.js"></script>
-            <!--Live Clock-->
-            <script src="JS/timezone.js"></script>
-            <!--Copy-->
-            <script src="JS/clipboard.js"></script>
-            <!--Responsive-->
-            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-            <!--Language-->
-            <meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Emilio Villarruel Fernández</title>
+    <!--UIkit CSS-->
+    <link rel="stylesheet" type="text/css" href="CSS/uikit.min.css" />
+    <!--UIkit JS-->
+    <script src="JS/uikit.min.js"></script>
+    <script src="JS/uikit-icons.min.js"></script>
+    <!--Live Clock-->
+    <script src="JS/timezone.js"></script>
+    <!--Copy-->
+    <script src="JS/clipboard.js"></script>
+    <!--Responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!--Language-->
+    <meta charset="UTF-8">
+    <!--Description-->
+    <meta name="description" content="Personal Website Portfolio">
+    <!--Kwords-->
+    <meta name="keywords" content="portfolio,cv,industrial,engineer,engineering">
+    <!--Author-->
+    <meta name="author" content="Emilio Villarruel Fernández">
+
+</head>
+
+<body style="overflow-x: hidden;">
+
+    <!--Navigation Bar-->
+    <div class="uk-background-default" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom">
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+            <!--Logo-->
+            <div class="uk-margin-large-left uk-navbar-left">
+                <a class="uk-navbar-item uk-logo uk-padding-remove uk-visible@s" href="#lnd"
+                    uk-scroll="offset: 150">Emilio Villarruel Fernández</a>
+                <a class="uk-navbar-item uk-logo uk-padding-remove uk-hidden@s" href="#lnd"
+                    uk-scroll="offset: 150">EVF</a>
+            </div>
+            <!--Navigation-->
+            <div class="uk-visible@m uk-navbar-right uk-margin-large-right" uk-margin>
+                <ul class="uk-nav uk-navbar-nav">
+                    <li>
+                        <a class="uk-padding-remove-vertical" href="#abt" uk-scroll="offset: 150">
+                            <button class="uk-button uk-button-text">About Me</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="uk-padding-remove-vertical" href="#prj" uk-scroll="offset: -0.5">
+                            <button class="uk-button uk-button-text">Projects</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="uk-padding-remove-vertical" href="#ctc" uk-scroll>
+                            <button class="uk-button uk-button-text">Contact</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--Mobile Navigation-->
+            <a uk-toggle href="#off-canv" class="uk-hidden@m uk-navbar-right uk-margin-large-right uk-icon"
+                uk-icon="menu"></a>
+            <div id="off-canv" uk-offcanvas="flip: true; overlay: true; mode: slide;">
+                <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                    <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                        <li><a class="uk-padding-remove-vertical" href="#abt" uk-scroll="offset: -0.5">About Me</a></li>
+                        <li><a class="uk-padding-remove-vertical" href="#prj" uk-scroll="offset: -0.5">Projects</a></li>
+                        <li><a class="uk-padding-remove-vertical" href="#ctc" uk-scroll>Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+    <!--Hero Title, Description and Button-->
+    <div id="lnd" class="uk-height-1-1 uk-flex uk-flex-middle uk-flex-center"
+        uk-height-viewport="offset-top: false; offset-bottom: 20">
+        <div class="uk-width-1-1 uk-flex-center" uk-grid>
+            <div
+                class="uk-margin-large-left uk-margin-large-right uk-margin-remove-left@s uk-margin-remove-right@s uk-width-1-2@m uk-width-2-3@s">
+                <!--Title, Desription & Buttons-->
+                <div class="uk-flex-auto">
+                    <h1 class="uk-heading-small uk-text-light">Hello Internet!</h1>
+                    <div class="uk-margin-medium-bottom uk-text-light">
+                        <p>
+                            Welcome to this portfolio thingy that displays some of the work I have done throughout my career. 
+                            Some of the projects that are listed here are quite challenging and interesting if I say so myself. 
+                            I hope you enjoy my little collection of coding and simulation projects.
+                        </p>
+                        <p class="uk-hidden@s">
+                            Interested? <a class="uk-text-primary" href="PDF/EmilioVillarruel_Resume.pdf"
+                                download>Download my resume.</a>
+                        </p>
+                    </div>
+                    <a href="PDF/EmilioVillarruel_Resume.pdf" download
+                        class="uk-visible@s uk-button uk-button-default uk-border-pill">Resume<span
+                            class="uk-icon uk-margin-small-left" uk-icon="download"></span></a>
+                    <a href="#ctc" uk-scroll class=" uk-visible@s uk-button uk-button-primary uk-border-pill">Contact
+                        Me<span class="uk-icon uk-margin-small-left" uk-icon="mail"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--About-->
+    <div id="abt" class="uk-width-1-1 uk-background-muted">
+        <div class="uk-grid-collapse uk-child-width-1-2@m" uk-grid>
+            <!--Section Title & Description-->
+            <div class="uk-flex uk-flex-middle">
+                <div class="uk-text-light uk-text-emphasis uk-padding uk-flex-center" uk-grid>
+                    <h1 class="uk-heading-small uk-text-light uk-text-center">A bit about me</h1>
+                    <div class="uk-width-4-5@s">
+                        <p>
+                            Hello, my name is <b>Emilio Villarruel</b>. I was born in Mexico City on 1997-02-05.
+                            I'm currently studying at <i>ITAM</i> for a BE (<i>Industrial Engineering</i>) and will be
+                            concluding
+                            my studies later this year. Also, I am working as a <b>Collection Assistant</b> at
+                            <a href="https://kubofinanciero.com" target="_blank">kubo.financiero</a>,
+                            a company that focuses on peer-to-peer lending and a variety of financial services.
+                        </p>
+                        <p>
+                            I wanted to display some of the work I've done along my journey as a student.
+                            I loved working in every one of these projects and thought they were quite fun and
+                            challenging to develop.
+                            Feel free to look thoroughly through a little sample of all my work.
+                        </p>
+                        <p>
+                            Take your time and enjoy it!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--Divider-->
+            <hr class="uk-text-center uk-divider-small uk-hidden@m">
+            <!--Section Description-->
+            <div class="uk-height-1-1">
+                <div class="uk-padding uk-flex uk-flex-center uk-text-light uk-text-emphasis">
+                    <dl class="uk-description-list uk-margin-remove">
+                        <div>
+                            <dt class="uk-text-normal uk-text-uppercase">Studies</dt>
+                            <dd><i>Instituto Tecnológico Autónomo de México</i> - Industrial Engineering</dd>
+                            <dd>
+                                <div uk-countdown="date: 2019-12-20T20:00:00+00:00">
+                                    <span
+                                        class="uk-countdown-number uk-text-small uk-countdown-days"></span><small>d</small>
+                                    <span
+                                        class="uk-countdown-number uk-text-small uk-countdown-hours"></span><small>h</small>
+                                    <span
+                                        class="uk-countdown-number uk-text-small uk-countdown-minutes"></span><small>m</small>
+                                    <span
+                                        class="uk-countdown-number uk-text-small uk-countdown-seconds"></span><small>s</small>
+                                    <small>(Time until graduation ceremony)</small>
+                                </div>
+                            </dd>
+                        </div>
+                        <div class="uk-margin-top uk-margin-bottom">
+                            <dt class="uk-text-normal uk-text-uppercase">Experience</dt>
+                            <dd><i>ITAM</i> - International Office
+                                <br>
+                                <small>2018 - 2019</small>
+                            </dd>
+                            <dd><i>kubo.financiero</i> - Collection Assistant
+                                <br>
+                                <small>2019 - Present</small>
+                            </dd>
+                        </div>
+                        <div>
+                            <dt class="uk-text-normal uk-text-uppercase">Languages</dt>
+                            <dd><i>Spanish</i> - Native</dd>
+                            <dd><i>English</i> - Proficient</dd>
+                            <dd><i>MSL</i> - Learning</dd>
+                            <dd><i>Japanese</i> - <span class="uk-text-uppercase">Planning</span></dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Projects-->
+    <div id="prj" class="uk-child-width-1-2@m uk-grid-collapse" uk-grid>
+        <!--Information-->
+        <div class="uk-flex uk-flex-middle uk-padding uk-padding-remove-horizontal">
             <!--Description-->
-            <meta name="description" content="Personal Website Portfolio">
-            <!--Kwords-->
-            <meta name="keywords" content="portfolio,cv,industrial,engineer,engineering">
-            <!--Author-->
-            <meta name="author" content="Emilio Villarruel Fernández">
-        
-        </head>
-
-        <body style="overflow-x: hidden;">
-
-            <!--Navigation Bar-->
-            <div class="uk-background-default" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom">
-                <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-                    <!--Logo-->
-                    <div class="uk-margin-large-left uk-navbar-left">
-                        <a class="uk-navbar-item uk-logo uk-padding-remove uk-visible@s" href="#lnd" uk-scroll="offset: 150">Emilio Villarruel Fernández</a>
-                        <a class="uk-navbar-item uk-logo uk-padding-remove uk-hidden@s" href="#lnd" uk-scroll="offset: 150">EVF</a>
-                    </div>
-                    <!--Navigation-->
-                    <div class="uk-visible@m uk-navbar-right uk-margin-large-right" uk-margin>
-                        <ul class="uk-nav uk-navbar-nav">
-                            <li>
-                                <a class="uk-padding-remove-vertical" href="#abt" uk-scroll="offset: 150">
-                                    <button class="uk-button uk-button-text">About Me</button>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="uk-padding-remove-vertical" href="#prj" uk-scroll="offset: -0.5">
-                                    <button class="uk-button uk-button-text">Projects</button>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="uk-padding-remove-vertical" href="#ctc" uk-scroll>
-                                    <button class="uk-button uk-button-text">Contact</button>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--Mobile Navigation-->
-                    <a uk-toggle href="#off-canv" class="uk-hidden@m uk-navbar-right uk-margin-large-right uk-icon" uk-icon="menu"></a>
-                    <div id="off-canv" uk-offcanvas="flip: true; overlay: true; mode: slide;">
-                        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-                            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-                                <li><a class="uk-padding-remove-vertical" href="#abt" uk-scroll="offset: -0.5">About Me</a></li>
-                                <li><a class="uk-padding-remove-vertical" href="#prj" uk-scroll="offset: -0.5">Projects</a></li>
-                                <li><a class="uk-padding-remove-vertical" href="#ctc" uk-scroll>Contact</a></li>
-                            </ul>                            
-                        </div>
-
-                    </div>
-                </nav>
-            </div>
-
-            <!--Hero Title, Description and Button-->
-            <div id="lnd" class="uk-height-1-1 uk-flex uk-flex-middle uk-flex-center" uk-height-viewport="offset-top: false; offset-bottom: 20">
-                <div class="uk-width-1-1 uk-flex-center" uk-grid>
-                    <div class="uk-margin-large-left uk-margin-large-right uk-margin-remove-left@s uk-margin-remove-right@s uk-width-1-2@m uk-width-2-3@s">
-                        <!--Title, Desription & Buttons-->
-                        <div class="uk-flex-auto">
-                            <h1 class="uk-heading-small uk-text-light">Hello Internet!</h1>
-                            <div class="uk-margin-medium-bottom uk-text-light">
-                                <p>
-                                    Welcome to this portfolio thingy that displays some of the work I have done along my carreer. 
-                                    Some of the projects that are listed here are quite challenging and interesting if I say so myself. 
-                                    I hope you enjoy my little collection of coding and simulation projects.
-                                </p>
-                                <p class="uk-hidden@s">
-                                    Interested? <a class="uk-text-primary" href="PDF/EmilioVillarruel_Resume.pdf" download>Download my resume.</a>
-                                </p>
-                            </div>
-                            <button class="uk-visible@s uk-button uk-button-default uk-border-pill"><a class="uk-link-reset" href="PDF/EmilioVillarruel_Resume.pdf" download>Resume<span class="uk-icon uk-margin-small-left" uk-icon="download"></span></a></button>
-                            <button class="uk-visible@s uk-button uk-button-primary uk-border-pill"><a class="uk-link-reset" href="#ctc" uk-scroll>Contact Me<span class="uk-icon uk-margin-small-left" uk-icon="mail"></span></a></button>
-                        </div>
-                    </div>
+            <div class="uk-flex uk-flex-column uk-flex-center">
+                <h1
+                    class="uk-margin-left uk-margin-right uk-margin-remove-right@s uk-margin-remove-left@s uk-heading-small uk-text-light uk-text-center">
+                    All kinds of projects</h1>
+                <div class="uk-margin-large-left uk-margin-large-right uk-text-light">
+                    <p>
+                        I've developed several projects in a variety of programming languages and software
+                        packages, such as <b>Simio</b>, <b>VBA</b>, <b>Python</b>, <b>Visual Studio</b>, <b>MATLAB</b>, and more.
+                        Feel free to explore the projects that are listed below.</p>
+                    <p>
+                        The summaries include a slideshow of screenshots, a brief explanation,
+                        and the tools used during the development of each project.
+                    </p>
                 </div>
-            </div>
-
-            <!--About-->
-            <div id="abt" class="uk-width-1-1 uk-background-muted">
-                <div class="uk-grid-collapse uk-child-width-1-2@m" uk-grid>
-                    <!--Section Title & Description-->
-                    <div class="uk-flex uk-flex-middle">
-                        <div class="uk-text-light uk-text-emphasis uk-padding uk-flex-center" uk-grid>
-                            <h1 class="uk-heading-small uk-text-light uk-text-center">A bit about me</h1>
-                            <div class="uk-width-4-5@s">
-                                <p>
-                                    Hello there my name is <b>Emilio Villarruel</b>, I was born in Mexico City on 1997-02-05. 
-                                    I'm currently studying at <i>ITAM</i> for a <b>BE</b> (<i>Industrial Engineering</i>)
-                                    and will be concluding my studies in winter of 2019. Also, I am working as a <b>Collection Assistant</b> 
-                                    at <b>kubo.financiero</b>, a company that focuses in peer-to-peer lending and a variety of financial services. 
-                                    I loved working in these projects and thought they were quite fun and challenging to develop. 
-                                    Feel free to look thoroghly through my work.
-                                </p>
-                                <p>
-                                    Take your time and enjoy!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Divider-->
-                    <hr class="uk-text-center uk-divider-small uk-hidden@m">
-                    <!--Section Description-->
-                    <div class="uk-height-1-1">
-                        <div class="uk-padding uk-flex uk-flex-center uk-text-light uk-text-emphasis">
-                            <dl class="uk-description-list uk-margin-remove">
-                                <div>
-                                    <dt class="uk-text-normal uk-text-uppercase">Studies</dt>
-                                    <dd><i>Instituto Tecnológico Autónomo de México</i> - Industrial Engineering</dd>
-                                    <dd>
-                                        <div uk-countdown="date: 2019-12-20T20:00:00+00:00">
-                                            <span class="uk-countdown-number uk-text-small uk-countdown-days"></span><small>d</small>
-                                            <span class="uk-countdown-number uk-text-small uk-countdown-hours"></span><small>h</small>
-                                            <span class="uk-countdown-number uk-text-small uk-countdown-minutes"></span><small>m</small>
-                                            <span class="uk-countdown-number uk-text-small uk-countdown-seconds"></span><small>s</small>
-                                            <small>(Time until graduation ceremony)</small>
-                                        </div>
-                                    </dd>
-                                </div>
-                                <div class="uk-margin-top uk-margin-bottom">
-                                    <dt class="uk-text-normal uk-text-uppercase">Experience</dt>
-                                    <dd><i>ITAM</i> - International Office
-                                        <br>
-                                        <small>2018 - 2019</small>
-                                    </dd>
-                                    <dd><i>kubo.financiero</i> - Collection Assistant
-                                        <br>
-                                        <small>2019 - Present</small>
-                                    </dd>
-                                </div>
-                                <div>
-                                    <dt class="uk-text-normal uk-text-uppercase">Languages</dt>
-                                    <dd><i>Spanish</i> - Native</dd>
-                                    <dd><i>English</i> - Proficient</dd>
-                                    <dd><i>MSL</i> - Learning</dd>
-                                    <dd><i>Japanese</i> - <span class="uk-text-uppercase">Planning</span></dd>
-                                </div>
-                            </dl>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!--Projects-->
-            <div id="prj" class="uk-child-width-1-2@m uk-grid-collapse" uk-grid>
-                <!--Information-->
-                <div class="uk-flex uk-flex-middle uk-padding uk-padding-remove-horizontal">
-                    <!--Description-->
-                    <div class="uk-flex uk-flex-column uk-flex-center">
-                        <h1 class="uk-margin-left uk-margin-right uk-margin-remove-right@s uk-margin-remove-left@s uk-heading-small uk-text-light uk-text-center">All kinds of projects</h1>
-                        <div class="uk-margin-large-left uk-margin-large-right uk-text-light">
-                            <p>I have developed quite a few projects in a variety of programming 
-                            languages and software packages such as <b>Simio</b>, <b>VBA</b>, <b>Python</b>, <b>Visual Studio</b>, 
-                            <b>MATLAB</b> and more. Feel free to explore the projects that are listed in this 
-                            section.</p>
-                            <p>The summaries include a slideshow of screenshots, a brief 
-                            explanation and the tools used along the development of each project.</p>
-                        </div>
-                        <!--Panel Navigation-->
-                        <div class="uk-flex uk-flex-center uk-flex-around uk-margin-top">
-                            <ul class="uk-flex uk-flex-around uk-subnav uk-subnav-pill uk-margin-remove" uk-switcher="connect: .panel-elements">
-                                <li><a class="uk-border-rounded" href="#">VBA<img class="uk-margin-small-left" width="15" src="SVG/windows.svg" uk-svg></a></li>
-                                <li><a class="uk-border-rounded" href="#">Visual Studio<img class="uk-margin-small-left" width="15" src="SVG/visual.svg" uk-svg></a></li>
-                                <li><a class="uk-border-rounded" href="#">Simio<span uk-icon="play" class="uk-icon uk-margin-small-left"></span></a></li>
-                                <li><a class="uk-border-rounded" href="#">MATLAB<img class="uk-margin-small-left" width="15" src="SVG/matlab.svg" uk-svg></a></li>
-                                <li><a class="uk-border-rounded" href="#">Python<img class="uk-margin-small-left" width="15" src="SVG/python.svg" uk-svg></a></li>
-                                <li><a class="uk-border-rounded" href="#">RSLogix<img class="uk-margin-small-left" width="15" src="SVG/RSLogix.svg" uk-svg></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!--Panels-->
-                <div class="uk-text-light">
-                    <ul class="uk-switcher panel-elements">
-                        <!--VBA-->
-                        <li>
-                            <div class="uk-card uk-card-body">
-                                <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
-                                    <div class="">
-                                        <ul class="uk-slideshow-items">
-                                            <li><img data-src="Images/VBA/VBA_1.png" width="" height="" alt="" uk-img></li>
-                                            <li><img data-src="Images/VBA/VBA_2.png" width="" height="" alt="" uk-img></li>
-                                            <li><img data-src="Images/VBA/VBA_3.png" width="" height="" alt="" uk-img></li>
-                                        </ul>
-                                    </div>
-                                    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-margin-small-bottom"></ul>
-                                </div> 
-                                <h2 class="uk-card-title uk-margin-remove">Intra-day Liquidity Risk in Banking Simulation</h2>
-                                <p class="uk-text-muted uk-margin-remove">May 2018</p>
-                                <hr>
-                                <p>Through the use of <i>LCG</i> and the generation of random variables we can replicate 
-                                    the behaviour of banking transactions. The primary objective of this simulation is 
-                                    to determine the correct ammount of <b>USD</b>, <b>EUR</b> and <b>GBP</b> the banking 
-                                    system has to have to avoid incurring costs of default and maximizing the quantity of 
-                                    our cash in hand.</p>
-                                <span class="uk-label uk-label-success">#Macros</span>
-                            </div>
-                        </li>
-                        <!--Visual-->
-                        <li>
-                            <div class="uk-card uk-card-body">
-
-                                <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
-                                    <div class="">
-                                        <ul class="uk-slideshow-items">
-                                            <li><img data-src="Images/Visual/Visual_1.png" width="" height="" alt="" uk-img></li>
-                                            <li><img data-src="Images/Visual/Visual_2.png" width="" height="" alt="" uk-img></li>
-                                            <li><img data-src="Images/Visual/Visual_3.png" width="" height="" alt="" uk-img></li>
-                                            <li><img data-src="Images/Visual/Visual_4.png" width="" height="" alt="" uk-img></li>
-                                            <li><img data-src="Images/Visual/Visual_5.png" width="" height="" alt="" uk-img></li>
-                                        </ul>
-                                    </div>
-                                    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-margin-small-bottom"></ul>
-                                </div>
-                                
-                                <h2 class="uk-card-title uk-margin-remove">Backend & Frontend Development</h2>
-                                <p class="uk-text-muted uk-margin-remove">May 2017</p>
-                                <hr>
-                                <p>Development of a DataBase in <em>SSMS</em> that can be accessed through a local website. 
-                                    In this website an administrator can modify the DataBase by adding new entries to a 
-                                    specific datatable, updating datatables and deleting entries through a friendly UI. 
-                                    Also, customers may access the website and "purchase" from the online store, having the 
-                                    <i>my cart</i> functionality.</p>
-                                <span class="uk-label uk-label-success">#ASP.NET</span>
-                                <span class="uk-label uk-label-success">#SQL</span>
-                                <span class="uk-label uk-label-success">#HTML</span>
-                                <span class="uk-label uk-label-success">#CSS</span>
-                            </div>
-                        
-                        </li>
-                        <!--Simio-->
-                        <li>
-                            <div class="uk-card uk-card-body">
-                                <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
-                                    <div class="">
-                                        <ul class="uk-slideshow-items">
-                                            <li><img data-src="Images/WP2.jpg" width="" height="" alt="" uk-img></li>
-                                            <li><img data-src="Images/WP3.jpg" width="" height="" alt="" uk-img></li>
-                                            <li><img data-src="Images/WP1.jpg" width="" height="" alt="" uk-img></li>
-                                        </ul>
-                                    </div>
-                                    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-margin-small-bottom"></ul>
-                                </div>
-                                <h2 class="uk-card-title uk-margin-remove">Seed Production Facility Simulation</h2>
-                                <p class="uk-text-muted uk-margin-remove">December 2018</p>
-                                <hr>
-                                <p>In this project we needed to simulate the impact of choosing certain 
-                                    alternatives regarding seed production in a facility. The alternatives 
-                                    ranged from opening a second distribution lane within the packaging 
-                                    area of the production process, to allowing the sorting of different 
-                                    kinds of seeds to be done simultaneously in two cellars.
-                                </p>
-                                <span class="uk-label uk-label-success">#Simio</span>
-                            </div>
-                        </li>
-                        <!--Matlab-->
-                        <li>
-                            <div class="uk-card uk-card-body">
-                                <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
-                                    <div class="">
-                                        <ul class="uk-slideshow-items">
-                                            <li><img data-src="Images/WP2.jpg" width="" height="" alt="" uk-img></li>
-                                            <li><img data-src="Images/WP3.jpg" width="" height="" alt="" uk-img></li>
-                                            <li><img data-src="Images/WP1.jpg" width="" height="" alt="" uk-img></li>
-                                        </ul>
-                                    </div>
-                                    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-margin-small-bottom"></ul>
-                                </div>
-                                <h2 class="uk-card-title uk-margin-remove">Celestial Orbits Simulation</h2>
-                                <p class="uk-text-muted uk-margin-remove">May 2018</p>
-                                <hr>
-                                <p>The model is based around concepts of numerical integration in conjunction with numerical 
-                                    differentiation. Trough the use of Runge-Kutta methods (Runge-Kutta & Euler) we can calculate 
-                                    the orbits of a simplified model of our solar system that includes the Sun, the Earth and 
-                                    another planet of our choice.</p>
-                                <span class="uk-label uk-label-success">#MATLAB</span>
-                            </div>
-                        </li>
-                        <!--Python-->
-                        <li>
-                            <div class="uk-card uk-card-body">
-                                <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
-                                    <div class="">
-                                        <ul class="uk-slideshow-items">
-                                            <li><img data-src="Images/WP2.jpg" width="" height="" alt="" uk-img></li>
-                                            <li><img data-src="Images/WP3.jpg" width="" height="" alt="" uk-img></li>
-                                            <li><img data-src="Images/WP1.jpg" width="" height="" alt="" uk-img></li>
-                                        </ul>
-                                    </div>
-                                    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-margin-small-bottom"></ul>
-                                </div>
-                                <h2 class="uk-card-title uk-margin-remove">Celestial Orbits Simulation</h2>
-                                <p class="uk-text-muted uk-margin-remove">May 2018</p>
-                                <hr>
-                                <p>Using ordinal differential equations </p>
-                                <span class="uk-label uk-label-success">#Python</span>
-                            </div>
-                        </li>
-                        <!--RSLogix-->
-                        <li>
-                            <div class="uk-card uk-card-body">
-                                <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
-                                    <div class="">
-                                        <ul class="uk-slideshow-items">
-                                            <li><img data-src="Images/WP2.jpg" width="" height="" alt="" uk-img></li>
-                                            <li><img data-src="Images/WP3.jpg" width="" height="" alt="" uk-img></li>
-                                            <li><img data-src="Images/WP1.jpg" width="" height="" alt="" uk-img></li>
-                                        </ul>
-                                    </div>
-                                    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-margin-small-bottom"></ul>
-                                </div>
-                                <h2 class="uk-card-title uk-margin-remove">Celestial Orbits Simulation</h2>
-                                <p class="uk-text-muted uk-margin-remove">May 2018</p>
-                                <hr>
-                                <p>Using ordinal differential equations </p>
-                                <span class="uk-label uk-label-success">#RSLogix</span>
-                                <span class="uk-label uk-label-success">#FluidSim</span>
-                            </div>
-                        </li>
+                <!--Panel Navigation-->
+                <div class="uk-flex uk-flex-center uk-flex-around uk-margin-top">
+                    <ul class="uk-flex uk-flex-center uk-flex-wrap-middle uk-subnav uk-subnav-pill uk-margin-remove"
+                        uk-switcher="connect: .panel-elements">
+                        <li><a class="uk-border-rounded" href="#">VBA<img class="uk-margin-small-left" width="15"
+                                    src="SVG/windows.svg" uk-svg></a></li>
+                        <li><a class="uk-border-rounded" href="#">Visual Studio<img class="uk-margin-small-left"
+                                    width="15" src="SVG/visual.svg" uk-svg></a></li>
+                        <li><a class="uk-border-rounded" href="#">Simio<span uk-icon="play"
+                                    class="uk-icon uk-margin-small-left"></span></a></li>
+                        <li><a class="uk-border-rounded" href="#">MATLAB<img class="uk-margin-small-left" width="15"
+                                    src="SVG/matlab.svg" uk-svg></a></li>
+                        <li><a class="uk-border-rounded" href="#">Python<img class="uk-margin-small-left" width="15"
+                                    src="SVG/python.svg" uk-svg></a></li>
+                        <li><a class="uk-border-rounded" href="#">RSLogix<img class="uk-margin-small-left" width="15"
+                                    src="SVG/RSLogix.svg" uk-svg></a></li>
                     </ul>
                 </div>
             </div>
-            
-            <!--Contact-->
-            <div id="ctc" class="uk-padding uk-background-secondary uk-light uk-height-extend">
-                <div class=" uk-text-center uk-flex uk-flex-center uk-flex-column uk-flex-middle uk-height-1-1">
-                    <h1 class="uk-text-light uk-heading-small">Let's get in touch!</h1>
-                    <div class="uk-text-light uk-text-emphasis uk-width-1-3@m uk-width-3-4@s">
+        </div>
+        <!--Panels-->
+        <div class="uk-text-light">
+            <ul class="uk-switcher panel-elements">
+                <!--VBA-->
+                <li>
+                    <div class="uk-card uk-card-body">
+                        <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
+                            <div class="">
+                                <ul class="uk-slideshow-items">
+                                    <li><img data-src="Images/VBA/VBA_1.png" width="" height="" alt="" uk-img></li>
+                                    <li><img data-src="Images/VBA/VBA_2.png" width="" height="" alt="" uk-img></li>
+                                    <li><img data-src="Images/VBA/VBA_3.png" width="" height="" alt="" uk-img></li>
+                                </ul>
+                            </div>
+                            <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-margin-small-bottom"></ul>
+                        </div>
+                        <h2 class="uk-card-title uk-margin-remove">Intra-day Liquidity Risk in Banking Simulation</h2>
+                        <p class="uk-text-muted uk-margin-remove">May 2018</p>
+                        <hr>
+                        <p>Through the use of <i>LCG</i> and the generation of random variables, we can replicate
+                            the behavior of banking transactions. The primary objective of this simulation is
+                            to determine the correct amount of <b>USD</b>, <b>EUR</b>, and <b>GBP</b> the banking
+                            system has to have to avoid incurring costs of default and maximizing the quantity of
+                            our cash in hand.</p>
+                        <span class="uk-label uk-label-success">#Macros</span>
+                    </div>
+                </li>
+                <!--Visual-->
+                <li>
+                    <div class="uk-card uk-card-body">
+
+                        <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
+                            <div class="">
+                                <ul class="uk-slideshow-items">
+                                    <li><img data-src="Images/Visual/Visual_1.png" width="" height="" alt="" uk-img>
+                                    </li>
+                                    <li><img data-src="Images/Visual/Visual_2.png" width="" height="" alt="" uk-img>
+                                    </li>
+                                    <li><img data-src="Images/Visual/Visual_3.png" width="" height="" alt="" uk-img>
+                                    </li>
+                                    <li><img data-src="Images/Visual/Visual_4.png" width="" height="" alt="" uk-img>
+                                    </li>
+                                    <li><img data-src="Images/Visual/Visual_5.png" width="" height="" alt="" uk-img>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-margin-small-bottom"></ul>
+                        </div>
+
+                        <h2 class="uk-card-title uk-margin-remove">Backend & Frontend Development</h2>
+                        <p class="uk-text-muted uk-margin-remove">May 2017</p>
+                        <hr>
                         <p>
-                            You can always drop me an email at 
-                            <a onclick="return copyCB()" uk-tooltip="title: Click to copy to clipboard; animation: uk-animation-slide-top" class="uk-text-normal">
-                                fernandezemiliov@gmail.com
-                            </a>. 
-                            If you are thinking in doing so just keep in mind that it's <b id="clocko"></b> where I live in 
-                            (<i>GMT -06:00</i>), this is explained to avoid having a potential timezone issue.
-                        </p> 
-                        <p>
-                            Thank you for your time! Best regards, Emilio.
+                            The main objective of this project was to develop a database in <em>SSMS</em> with access through a local website.
+                            In this website, an administrator can modify the database by adding, updating, and deleting entries of different 
+                            data tables through a friendly UI.
+                            Also, customers may access the website and "purchase" art pieces from the online store, 
+                            integrating my cart functionality on our website.
                         </p>
+                        <span class="uk-label uk-label-success">#ASP.NET</span>
+                        <span class="uk-label uk-label-success">#SQL</span>
+                        <span class="uk-label uk-label-success">#HTML</span>
+                        <span class="uk-label uk-label-success">#CSS</span>
                     </div>
-                    <div>
-                        <a href="https://www.linkedin.com/in/emilio-villarruel-371868196/" target="_blank" class="uk-icon-button" uk-icon="linkedin"></a>
-                        <a href="https://github.com/evildez?tab=overview" target="_blank" class="uk-icon-button" uk-icon="github"></a>
+
+                </li>
+                <!--Simio-->
+                <li>
+                    <div class="uk-card uk-card-body">
+                        <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
+                            <div class="">
+                                <ul class="uk-slideshow-items">
+                                    <li><img data-src="Images/WP2.jpg" width="" height="" alt="" uk-img></li>
+                                    <li><img data-src="Images/WP3.jpg" width="" height="" alt="" uk-img></li>
+                                    <li><img data-src="Images/WP1.jpg" width="" height="" alt="" uk-img></li>
+                                </ul>
+                            </div>
+                            <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-margin-small-bottom"></ul>
+                        </div>
+                        <h2 class="uk-card-title uk-margin-remove">Seed Production Facility Simulation</h2>
+                        <p class="uk-text-muted uk-margin-remove">December 2018</p>
+                        <hr>
+                        <p>
+                            In this project, our task was to simulate the impact of choosing alternatives concerning seed production.
+                            The alternatives ranged from opening a second distribution lane within the packaging area of the production 
+                            process to allowing the sorting of different kinds of seeds to be done simultaneously in two cellars.
+                        </p>
+                        <span class="uk-label uk-label-success">#Simio</span>
                     </div>
-                </div>
+                </li>
+                <!--Matlab-->
+                <li>
+                    <div class="uk-card uk-card-body">
+                        <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
+                            <div class="">
+                                <ul class="uk-slideshow-items">
+                                    <li><img data-src="Images/WP2.jpg" width="" height="" alt="" uk-img></li>
+                                    <li><img data-src="Images/WP3.jpg" width="" height="" alt="" uk-img></li>
+                                    <li><img data-src="Images/WP1.jpg" width="" height="" alt="" uk-img></li>
+                                </ul>
+                            </div>
+                            <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-margin-small-bottom"></ul>
+                        </div>
+                        <h2 class="uk-card-title uk-margin-remove">Celestial Orbits Simulation</h2>
+                        <p class="uk-text-muted uk-margin-remove">May 2018</p>
+                        <hr>
+                        <p>
+                            The model required the use of numerical integration in conjunction with numerical differentiation. 
+                            Trough the use of Runge-Kutta and Euler methods, we were asked to calculate the orbits of a simplified 
+                            model of our solar system that included the Sun, the Earth, and another planet of our choice.
+                        </p>
+                        <span class="uk-label uk-label-success">#MATLAB</span>
+                    </div>
+                </li>
+                <!--Python-->
+                <li>
+                    <div class="uk-card uk-card-body">
+                        <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
+                            <div class="">
+                                <ul class="uk-slideshow-items">
+                                    <li><img data-src="Images/WP2.jpg" width="" height="" alt="" uk-img></li>
+                                    <li><img data-src="Images/WP3.jpg" width="" height="" alt="" uk-img></li>
+                                    <li><img data-src="Images/WP1.jpg" width="" height="" alt="" uk-img></li>
+                                </ul>
+                            </div>
+                            <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-margin-small-bottom"></ul>
+                        </div>
+                        <h2 class="uk-card-title uk-margin-remove">Celestial Orbits Simulation</h2>
+                        <p class="uk-text-muted uk-margin-remove">May 2018</p>
+                        <hr>
+                        <p>Using ordinal differential equations </p>
+                        <span class="uk-label uk-label-success">#Python</span>
+                    </div>
+                </li>
+                <!--RSLogix-->
+                <li>
+                    <div class="uk-card uk-card-body">
+                        <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
+                            <div class="">
+                                <ul class="uk-slideshow-items">
+                                    <li><img data-src="Images/WP2.jpg" width="" height="" alt="" uk-img></li>
+                                    <li><img data-src="Images/WP3.jpg" width="" height="" alt="" uk-img></li>
+                                    <li><img data-src="Images/WP1.jpg" width="" height="" alt="" uk-img></li>
+                                </ul>
+                            </div>
+                            <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-margin-small-bottom"></ul>
+                        </div>
+                        <h2 class="uk-card-title uk-margin-remove">Celestial Orbits Simulation</h2>
+                        <p class="uk-text-muted uk-margin-remove">May 2018</p>
+                        <hr>
+                        <p>Using ordinal differential equations </p>
+                        <span class="uk-label uk-label-success">#RSLogix</span>
+                        <span class="uk-label uk-label-success">#FluidSim</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Contact-->
+    <div id="ctc" class="uk-padding uk-background-secondary uk-light uk-height-extend">
+        <div class=" uk-text-center uk-flex uk-flex-center uk-flex-column uk-flex-middle uk-height-1-1">
+            <h1 class="uk-text-light uk-heading-small">Let's get in touch!</h1>
+            <div class="uk-text-light uk-text-emphasis uk-width-1-3@m uk-width-3-4@s">
+                <p>
+                    You can always drop me an email at
+                    <a onclick="return copyCB()"
+                        uk-tooltip="title: Click to copy to clipboard; animation: uk-animation-slide-top"
+                        class="uk-text-normal">
+                        fernandezemiliov@gmail.com
+                    </a>.
+                    If you are thinking of doing so, keep in mind that it's <b id="clocko"></b> where I live in
+                    (<i>GMT -06:00</i>), this is explained to avoid having a potential timezone issue.
+                </p>
+                <p>
+                    Thank you for your time! Best regards, Emilio.
+                </p>
             </div>
+            <div>
+                <a href="https://www.linkedin.com/in/emilio-villarruel-371868196/" target="_blank"
+                    class="uk-icon-button" uk-icon="linkedin"></a>
+                <a href="https://github.com/evildez?tab=overview" target="_blank" class="uk-icon-button"
+                    uk-icon="github"></a>
+            </div>
+        </div>
+    </div>
 
-        </body>
+</body>
 
-    </html>
+</html>
