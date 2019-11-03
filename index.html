@@ -7,6 +7,10 @@
             <!--UIkit JS-->
             <script src="JS/uikit.min.js"></script>
             <script src="JS/uikit-icons.min.js"></script>
+            <!--Live Clock-->
+            <script src="JS/timezone.js"></script>
+            <!--Copy-->
+            <script src="JS/clipboard.js"></script>
             <!--Responsive-->
             <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
             <!--Language-->
@@ -42,11 +46,6 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="uk-padding-remove-vertical" href="#msc" uk-scroll>
-                                    <button class="uk-button uk-button-text">Miscellaneous</button>
-                                </a>
-                            </li>
-                            <li>
                                 <a class="uk-padding-remove-vertical" href="#ctc" uk-scroll>
                                     <button class="uk-button uk-button-text">Contact</button>
                                 </a>
@@ -58,9 +57,8 @@
                     <div id="off-canv" uk-offcanvas="flip: true; overlay: true; mode: slide;">
                         <div class="uk-offcanvas-bar uk-flex uk-flex-column">
                             <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-                                <li><a class="uk-padding-remove-vertical" href="#abt" uk-scroll="offset: 50">About Me</a></li>
+                                <li><a class="uk-padding-remove-vertical" href="#abt" uk-scroll="offset: -0.5">About Me</a></li>
                                 <li><a class="uk-padding-remove-vertical" href="#prj" uk-scroll="offset: -0.5">Projects</a></li>
-                                <li><a class="uk-padding-remove-vertical" href="#msc" uk-scroll>Miscellaneous</a></li>
                                 <li><a class="uk-padding-remove-vertical" href="#ctc" uk-scroll>Contact</a></li>
                             </ul>                            
                         </div>
@@ -70,18 +68,17 @@
             </div>
 
             <!--Hero Title, Description and Button-->
-            <div id="lnd" class="uk-height-1-1 uk-flex uk-flex-middle" uk-height-viewport="offset-top: false; offset-bottom: 20">
-                <div class=" uk-flex uk-flex-around uk-child-width-1-1@m uk-child-width-1-3@l uk-grid-large" uk-grid>
-                    <div class="uk-margin-xlarge-left uk-margin-xlarge-right uk-margin-remove-left@m uk-margin-remove-right@m uk-width-1-3@m">
+            <div id="lnd" class="uk-height-1-1 uk-flex uk-flex-middle uk-flex-center" uk-height-viewport="offset-top: false; offset-bottom: 20">
+                <div class="uk-width-1-1 uk-flex-center" uk-grid>
+                    <div class="uk-margin-large-left uk-margin-large-right uk-margin-remove-left@s uk-margin-remove-right@s uk-width-1-2@m uk-width-2-3@s">
                         <!--Title, Desription & Buttons-->
                         <div class="uk-flex-auto">
-                            <h1 class="uk-heading-medium uk-text-light">Hello Internet!</h1>
-                            <div class="uk-text-meta uk-margin-medium-bottom">
+                            <h1 class="uk-heading-small uk-text-light">Hello Internet!</h1>
+                            <div class="uk-margin-medium-bottom uk-text-light">
                                 <p>
-                                    I'm pleased to welcome you to this porrtfolio thingy that displays some of the work 
-                                    that I have done along my carrer. Some of the projects that are listed here are quite 
-                                    challenging and interesting if I say so myself. I hope you enjoy my little collection 
-                                    of coding and simulation projects.
+                                    Welcome to this portfolio thingy that displays some of the work I have done along my carreer. 
+                                    Some of the projects that are listed here are quite challenging and interesting if I say so myself. 
+                                    I hope you enjoy my little collection of coding and simulation projects.
                                 </p>
                                 <p class="uk-hidden@s">
                                     Interested? <a class="uk-text-primary">Download my resume.</a>
@@ -91,38 +88,28 @@
                             <button class="uk-visible@s uk-button uk-button-primary uk-border-pill">Contact Me<span class="uk-icon uk-margin-small-left" uk-icon="mail"></span></button>
                         </div>
                     </div>
-                    
-                    <!--SVG Image-->
-                    <div class="uk-width-1-3@m uk-animation-toggle uk-visible@m" tabindex="0">
-                        <img src="SVG/Landing_SVG.svg" class="uk-preserve uk-animation-stroke uk-height-medium" uk-svg="stroke-animation: true" width="" height="">
-                    </div>
-
                 </div>
-            
             </div>
 
             <!--About-->
-            <div id="abt" class="uk-width-1-1 uk-background-primary">
-                <div class="uk-light uk-grid-collapse uk-child-width-1-2@m" uk-grid>
+            <div id="abt" class="uk-width-1-1 uk-background-muted">
+                <div class="uk-grid-collapse uk-child-width-1-2@m" uk-grid>
                     <!--Section Title & Description-->
                     <div class="uk-flex uk-flex-middle">
-                        <div class="uk-text-light uk-text-emphasis uk-padding">
-                            <h1 uk-parallax="y: -250,0; opacity: 0, 1; viewport: 0.5;" class="uk-visible@s uk-heading-small uk-text-light uk-text-center">A bit about me</h1>
-                            <p uk-parallax="y: 250, 0; opacity: 0, 1; viewport: 0.39;" class="uk-visible@s uk-text-justify">
-                                Hello there my name is <b>Emilio</b>, I'm pleased to meet you. 
-                                I'm currently a full time student at <i>ITAM</i> and will be concluding my studies 
-                                in winter of 2019. I created this website with the purpose of presenting me and my work 
-                                to the world. I consider myself passionate about learning a bit of everything that the 
-                                world has at our disposition. My friends and colleagues consider me a school addict 
-                                and I take that gracefully as a compliment.</p>
-                            <h1 class="uk-hidden@s uk-heading-small uk-text-light uk-text-center">A bit about me</h1>
-                            <p class="uk-hidden@s uk-text-justify">
-                                Hello there my name is <b>Emilio</b>, I'm pleased to meet you. 
-                                I'm currently a full time student at <i>ITAM</i> and will be concluding my studies 
-                                in winter of 2019. I created this website with the purpose of presenting me and my work 
-                                to the world. I consider myself passionate about learning a bit of everything that the 
-                                world has at our disposition. My friends and colleagues consider me a school addict 
-                                and I take that gracefully as a compliment.</p>
+                        <div class="uk-text-light uk-text-emphasis uk-padding uk-flex-center" uk-grid>
+                            <h1 class="uk-heading-small uk-text-light uk-text-center">A bit about me</h1>
+                            <div class="uk-width-4-5@s">
+                                <p>
+                                    Hello there my name is <b>Emilio</b>. I'm currently studying at <i>ITAM</i> for a <b>BE</b> degree (<i>Industrial Engineering</i>)
+                                    and will be concluding my studies in winter of 2019. Also, I am working as a <b>Collection Assistant</b> 
+                                    at <b>kubo.financiero</b>, a company that focuses in peer-to-peer lending and a variety of financial services. 
+                                    I loved working in these projects and thought they were quite fun and challenging to develop. 
+                                    Feel free to look thoroghly through my work.
+                                </p>
+                                <p>
+                                    fdajfañjlaj
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <!--Divider-->
@@ -130,30 +117,9 @@
                     <!--Section Description-->
                     <div class="uk-height-1-1">
                         <div class="uk-padding uk-flex uk-flex-center uk-text-light uk-text-emphasis">
-                            <!--Desktop Friendly-->
-                            <dl class="uk-description-list uk-margin-remove uk-visible@s">
-                                <dt uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;" class="uk-text-emphasis">Studies</dt>
-                                <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>Instituto Tecnológico Autónomo de México</i> - Industrial Engineering</dd>
-                                <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;">
-                                    <div uk-countdown="date: 2019-12-20T20:00:00+00:00">
-                                        <span class="uk-countdown-number uk-text-small uk-countdown-days"></span><small>d</small>
-                                        <span class="uk-countdown-number uk-text-small uk-countdown-hours"></span><small>h</small>
-                                        <span class="uk-countdown-number uk-text-small uk-countdown-minutes"></span><small>m</small>
-                                        <span class="uk-countdown-number uk-text-small uk-countdown-seconds"></span><small>s</small>
-                                        <small>(Time until graduation ceremony)</small>
-                                    </div>
-                                </dd>
-                                <dt uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;" class="uk-text-emphasis">Experience</dt>
-                                <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>ITAM Intern</i> - International Office</dd>
-                                <dt uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;" class="uk-text-emphasis">Languages</dt>
-                                <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>Spanish</i> - Native</dd>
-                                <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>English</i> - Proficient</dd>
-                                <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>MSL</i> - Learning</dd>
-                                <dd uk-parallax="x: 250, 0; opacity: 0, 1; viewport: 0.2;"><i>Japanese</i> - <span class="uk-text-uppercase">Planning</span></dd>
-                            </dl>
-                            <!--Mobile Friendly-->
-                            <dl class="uk-description-list uk-margin-remove uk-hidden@s">
-                                    <dt class="uk-text-emphasis">Studies</dt>
+                            <dl class="uk-description-list uk-margin-remove">
+                                <div>
+                                    <dt class="uk-text-normal uk-text-uppercase">Studies</dt>
                                     <dd><i>Instituto Tecnológico Autónomo de México</i> - Industrial Engineering</dd>
                                     <dd>
                                         <div uk-countdown="date: 2019-12-20T20:00:00+00:00">
@@ -164,14 +130,26 @@
                                             <small>(Time until graduation ceremony)</small>
                                         </div>
                                     </dd>
-                                    <dt class="uk-text-emphasis">Experience</dt>
-                                    <dd><i>ITAM Intern</i> - International Office</dd>
-                                    <dt class="uk-text-emphasis">Languages</dt>
+                                </div>
+                                <div class="uk-margin-top uk-margin-bottom">
+                                    <dt class="uk-text-normal uk-text-uppercase">Experience</dt>
+                                    <dd><i>ITAM</i> - International Office
+                                        <br>
+                                        <small>2018 - 2019</small>
+                                    </dd>
+                                    <dd><i>kubo.financiero</i> - Collection Assistant
+                                        <br>
+                                        <small>2019 - Present</small>
+                                    </dd>
+                                </div>
+                                <div>
+                                    <dt class="uk-text-normal uk-text-uppercase">Languages</dt>
                                     <dd><i>Spanish</i> - Native</dd>
                                     <dd><i>English</i> - Proficient</dd>
                                     <dd><i>MSL</i> - Learning</dd>
                                     <dd><i>Japanese</i> - <span class="uk-text-uppercase">Planning</span></dd>
-                                </dl>
+                                </div>
+                            </dl>
                         </div>
                     </div>
                 </div>
@@ -195,22 +173,22 @@
                         <!--Panel Navigation-->
                         <div class="uk-flex uk-flex-center uk-flex-around uk-margin-top">
                             <ul class="uk-flex uk-flex-around uk-subnav uk-subnav-pill uk-margin-remove" uk-switcher="connect: .panel-elements">
-                                <li><a class="uk-border-rounded" href="#">VBA</a></li>
-                                <li><a class="uk-border-rounded" href="#">Visual Studio</a></li>
-                                <li><a class="uk-border-rounded" href="#">Simio</a></li>
-                                <li><a class="uk-border-rounded" href="#">MATLAB</a></li>
-                                <li><a class="uk-border-rounded" href="#">Python</a></li>
-                                <li><a class="uk-border-rounded" href="#">RSLogix</a></li>
+                                <li><a class="uk-border-rounded" href="#">VBA<img class="uk-margin-small-left" width="15" src="/SVG/windows.svg" uk-svg></a></li>
+                                <li><a class="uk-border-rounded" href="#">Visual Studio<img class="uk-margin-small-left" width="15" src="/SVG/visual.svg" uk-svg></a></li>
+                                <li><a class="uk-border-rounded" href="#">Simio<span uk-icon="play" class="uk-icon uk-margin-small-left"></span></a></li>
+                                <li><a class="uk-border-rounded" href="#">MATLAB<img class="uk-margin-small-left" width="15" src="/SVG/matlab.svg" uk-svg></a></li>
+                                <li><a class="uk-border-rounded" href="#">Python<img class="uk-margin-small-left" width="15" src="/SVG/python.svg" uk-svg></a></li>
+                                <li><a class="uk-border-rounded" href="#">RSLogix<img class="uk-margin-small-left" width="15" src="/SVG/RSLogix.svg" uk-svg></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <!--Panels-->
                 <div>
-                    <ul class="uk-switcher panel-elements uk-panel">
+                    <ul class="uk-switcher panel-elements">
                         <!--VBA-->
                         <li>
-                            <div class="uk-card uk-card-default uk-card-body">
+                            <div class="uk-card uk-card-body">
                                 <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
                                     <div class="">
                                         <ul class="uk-slideshow-items">
@@ -234,7 +212,7 @@
                         </li>
                         <!--Visual-->
                         <li>
-                            <div class="uk-card uk-card-default uk-card-body">
+                            <div class="uk-card uk-card-body">
 
                                 <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
                                     <div class="">
@@ -266,7 +244,7 @@
                         </li>
                         <!--Simio-->
                         <li>
-                            <div class="uk-card uk-card-default uk-card-body">
+                            <div class="uk-card uk-card-body">
                                 <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
                                     <div class="">
                                         <ul class="uk-slideshow-items">
@@ -291,7 +269,7 @@
                         </li>
                         <!--Matlab-->
                         <li>
-                            <div class="uk-card uk-card-default uk-card-body">
+                            <div class="uk-card uk-card-body">
                                 <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
                                     <div class="">
                                         <ul class="uk-slideshow-items">
@@ -314,7 +292,7 @@
                         </li>
                         <!--Python-->
                         <li>
-                            <div class="uk-card uk-card-default uk-card-body">
+                            <div class="uk-card uk-card-body">
                                 <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
                                     <div class="">
                                         <ul class="uk-slideshow-items">
@@ -334,7 +312,7 @@
                         </li>
                         <!--RSLogix-->
                         <li>
-                            <div class="uk-card uk-card-default uk-card-body">
+                            <div class="uk-card uk-card-body">
                                 <div class="uk-visible@s" uk-slideshow="autoplay: true; autoplay-interval: 7500">
                                     <div class="">
                                         <ul class="uk-slideshow-items">
@@ -357,22 +335,27 @@
                 </div>
             </div>
             
-            <!--Miscellaneous-->
-            <div id="msc" class="uk-background-secondary uk-height-extend" >
-                <div class="uk-light uk-flex uk-flex-middle uk-margin-auto">
-                    <div class="uk-padding-large uk-width-2-3@m">
-                        <h1 class="uk-heading-small uk-margin-remove-bottom uk-text-light">Miscellaneous</h1>
-                        <p class="uk-margin-remove uk-text-small uk-text-italic">(a bit more about me)</p>
-                        <p class="uk-text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
-                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+            <div id="ctc" class="uk-background-secondary uk-light uk-height-large">
+                <div class="uk-text-center uk-flex uk-flex-center uk-flex-column uk-flex-middle uk-height-1-1">
+                    <h1 class="uk-text-light uk-heading-small">Let's get in touch!</h1>
+                    <div class="uk-text-light uk-text-emphasis uk-width-1-3">
+                        <p>
+                            You can always drop me an email at 
+                            <a onclick="return copyCB()" uk-tooltip="title: Click to copy to clipboard; animation: uk-animation-slide-top" class="uk-text-normal">
+                                fernandezemiliov@gmail.com
+                            </a>. 
+                            If you are thinking in doing so just keep in mind that it's <b id="clocko"></b> where I live in 
+                            (<i>GMT -06:00</i>), this is explained to avoid having a potential timezone issue.
+                        </p> 
+                        <p>
+                            Thank you for your time! Best regards, Emilio.
                         </p>
                     </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/emilio-villarruel-371868196/" target="_blank" class="uk-icon-button" uk-icon="linkedin"></a>
+                        <a href="https://github.com/evildez?tab=overview" target="_blank" class="uk-icon-button" uk-icon="github"></a>
+                    </div>
                 </div>
-            </div>
-
-            <div id="ctc">
-
             </div>
 
         </body>
