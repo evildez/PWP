@@ -41,7 +41,7 @@
             <div class="uk-visible@m uk-navbar-right uk-margin-large-right" uk-margin>
                 <ul class="uk-nav uk-navbar-nav">
                     <li>
-                        <a class="uk-padding-remove-vertical" href="#abt" uk-scroll="offset: 150">
+                        <a class="uk-padding-remove-vertical" href="#abt" uk-scroll>
                             <button class="uk-button uk-button-text">About Me</button>
                         </a>
                     </li>
@@ -74,11 +74,9 @@
     </div>
 
     <!--Hero Title, Description and Button-->
-    <div id="lnd" class="uk-height-1-1 uk-flex uk-flex-middle uk-flex-center"
-        uk-height-viewport="offset-top: false; offset-bottom: 20">
+    <div id="lnd" class="uk-height-1-1 uk-flex uk-flex-middle uk-flex-center" uk-height-viewport="offset-top: false; offset-bottom: 20">
         <div class="uk-width-1-1 uk-flex-center" uk-grid>
-            <div
-                class="uk-margin-large-left uk-margin-large-right uk-margin-remove-left@s uk-margin-remove-right@s uk-width-1-2@m uk-width-2-3@s">
+            <div class="uk-margin-large-left uk-margin-large-right uk-margin-remove-left@s uk-margin-remove-right@s uk-width-1-2@m uk-width-2-3@s">
                 <!--Title, Desription & Buttons-->
                 <div class="uk-flex-auto">
                     <h1 class="uk-heading-small uk-text-light">Hello Internet!</h1>
@@ -104,11 +102,11 @@
     </div>
 
     <!--About-->
-    <div id="abt" class="uk-width-1-1 uk-background-muted">
+    <div id="abt" class="uk-background-muted uk-flex uk-flex-middle uk-width-1-1 uk-height-viewport uk-background-cover" uk-heigh-viewport="expand: true">
         <div class="uk-grid-collapse uk-child-width-1-2@m" uk-grid>
             <!--Section Title & Description-->
-            <div class="uk-flex uk-flex-middle">
-                <div class="uk-text-light uk-text-emphasis uk-padding uk-flex-center" uk-grid>
+            <div class="">
+                <div class="uk-text-light uk-text-emphasis uk-padding uk-flex-center" uk-grid uk-parallax="y: 100, -100; media: @m; easing: -1;">
                     <h1 class="uk-heading-small uk-text-light uk-text-center">A bit about me</h1>
                     <div class="uk-width-4-5@s">
                         <p>
@@ -134,8 +132,8 @@
             <!--Divider-->
             <hr class="uk-text-center uk-divider-small uk-hidden@m">
             <!--Section Description-->
-            <div class="uk-height-1-1">
-                <div class="uk-padding uk-flex uk-flex-center uk-text-light uk-text-emphasis">
+            <div class="uk-flex uk-flex-center">
+                <div class="uk-padding uk-text-light uk-text-emphasis" uk-parallax="y: -100, 100; media: @m; easing: -1;">
                     <dl class="uk-description-list uk-margin-remove">
                         <div>
                             <dt class="uk-text-normal uk-text-uppercase">Studies</dt>
@@ -183,7 +181,7 @@
         <!--Information-->
         <div class="uk-flex uk-flex-middle uk-padding uk-padding-remove-horizontal">
             <!--Description-->
-            <div class="uk-flex uk-flex-column uk-flex-center">
+            <div class="uk-flex uk-flex-column uk-flex-center" uk-scrollspy="cls: uk-animation-fade;">
                 <h1
                     class="uk-margin-left uk-margin-right uk-margin-remove-right@s uk-margin-remove-left@s uk-heading-small uk-text-light uk-text-center">
                     All kinds of projects</h1>
@@ -198,27 +196,27 @@
                     </p>
                 </div>
                 <!--Panel Navigation-->
-                <div class="uk-flex uk-flex-center uk-flex-around uk-margin-top">
-                    <ul class="uk-flex uk-flex-center uk-flex-wrap-middle uk-subnav uk-subnav-pill uk-margin-remove"
+                <div class="uk-margin-top">
+                    <ul class="uk-flex-center uk-flex-middle uk-subnav uk-subnav-pill uk-margin-remove"
                         uk-switcher="connect: .panel-elements">
-                        <li><a class="uk-border-rounded" href="#">VBA<img class="uk-margin-small-left" width="15"
+                        <li class="uk-padding-remove"><a class="uk-border-rounded" href="#">VBA<img class="uk-margin-small-left" width="15"
                                     src="SVG/windows.svg" uk-svg></a></li>
-                        <li><a class="uk-border-rounded" href="#">Visual Studio<img class="uk-margin-small-left"
+                        <li class="uk-padding-remove"><a class="uk-border-rounded" href="#">Visual Studio<img class="uk-margin-small-left"
                                     width="15" src="SVG/visual.svg" uk-svg></a></li>
-                        <li><a class="uk-border-rounded" href="#">Simio<span uk-icon="play"
+                        <li class="uk-padding-remove"><a class="uk-border-rounded" href="#">Simio<span uk-icon="play"
                                     class="uk-icon uk-margin-small-left"></span></a></li>
-                        <li><a class="uk-border-rounded" href="#">MATLAB<img class="uk-margin-small-left" width="15"
+                        <li class="uk-padding-remove"><a class="uk-border-rounded" href="#">MATLAB<img class="uk-margin-small-left" width="15"
                                     src="SVG/matlab.svg" uk-svg></a></li>
-                        <li><a class="uk-border-rounded" href="#">Python<img class="uk-margin-small-left" width="15"
+                        <li class="uk-padding-remove"><a class="uk-border-rounded" href="#">Python<img class="uk-margin-small-left" width="15"
                                     src="SVG/python.svg" uk-svg></a></li>
-                        <li><a class="uk-border-rounded" href="#">RSLogix<img class="uk-margin-small-left" width="15"
+                        <li class="uk-padding-remove"><a class="uk-border-rounded" href="#">RSLogix<img class="uk-margin-small-left" width="15"
                                     src="SVG/RSLogix.svg" uk-svg></a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <!--Panels-->
-        <div class="uk-text-light">
+        <div class="uk-text-light"  uk-scrollspy="cls: uk-animation-fade;">
             <ul class="uk-switcher panel-elements">
                 <!--VBA-->
                 <li>
